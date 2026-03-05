@@ -12,7 +12,7 @@ public class BillConfiguration : IEntityTypeConfiguration<Bill>
         builder.HasKey(b => b.Id);
         builder.Property(b => b.Amount).IsRequired().HasColumnType("decimal(18,2)");
         builder.Property(b => b.Status).IsRequired().HasMaxLength(50);
-        builder.Property(b => b.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+        builder.Property(b => b.CreatedDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
         builder.Property(b => b.IsActive).HasDefaultValue(true);
 
         builder.HasOne(b => b.Patient)

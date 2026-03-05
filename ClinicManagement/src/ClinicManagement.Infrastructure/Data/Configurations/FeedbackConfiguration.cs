@@ -11,7 +11,7 @@ public class FeedbackConfiguration : IEntityTypeConfiguration<Feedback>
         builder.ToTable("Feedbacks");
         builder.HasKey(f => f.Id);
         builder.Property(f => f.Message).IsRequired();
-        builder.Property(f => f.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+        builder.Property(f => f.CreatedDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
         builder.Property(f => f.IsActive).HasDefaultValue(true);
 
         builder.HasOne(f => f.Patient)

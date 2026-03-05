@@ -229,7 +229,7 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
@@ -289,6 +289,9 @@
               "/modernize-data/studio-data/TNT1001/APP1055/transformed-code/30/studio-workspace/Backend Services/ClinicManagement/src/ClinicManagement.Application/ClinicManagement.Application.csproj": {
                 "projectPath": "/modernize-data/studio-data/TNT1001/APP1055/transformed-code/30/studio-workspace/Backend Services/ClinicManagement/src/ClinicManagement.Application/ClinicManagement.Application.csproj"
               },
+              "/modernize-data/studio-data/TNT1001/APP1055/transformed-code/30/studio-workspace/Backend Services/ClinicManagement/src/ClinicManagement.Domain/ClinicManagement.Domain.csproj": {
+                "projectPath": "/modernize-data/studio-data/TNT1001/APP1055/transformed-code/30/studio-workspace/Backend Services/ClinicManagement/src/ClinicManagement.Domain/ClinicManagement.Domain.csproj"
+              },
               "/modernize-data/studio-data/TNT1001/APP1055/transformed-code/30/studio-workspace/Backend Services/ClinicManagement/src/ClinicManagement.Infrastructure/ClinicManagement.Infrastructure.csproj": {
                 "projectPath": "/modernize-data/studio-data/TNT1001/APP1055/transformed-code/30/studio-workspace/Backend Services/ClinicManagement/src/ClinicManagement.Infrastructure/ClinicManagement.Infrastructure.csproj"
               }
@@ -326,6 +329,12 @@
             "Moq": {
               "target": "Package",
               "version": "[4.20.70, )"
+            },
+            "coverlet.msbuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "xunit": {
               "target": "Package",

@@ -12,7 +12,7 @@ public class DoctorConfiguration : IEntityTypeConfiguration<Doctor>
         builder.HasKey(d => d.Id);
         builder.Property(d => d.Specialization).IsRequired().HasMaxLength(100);
         builder.Property(d => d.ConsultationFee).HasColumnType("decimal(18,2)");
-        builder.Property(d => d.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+        builder.Property(d => d.CreatedDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
         builder.Property(d => d.IsActive).HasDefaultValue(true);
 
         builder.HasOne(d => d.User)

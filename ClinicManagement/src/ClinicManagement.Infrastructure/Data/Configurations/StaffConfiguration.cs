@@ -11,7 +11,7 @@ public class StaffConfiguration : IEntityTypeConfiguration<Staff>
         builder.ToTable("Staff");
         builder.HasKey(s => s.Id);
         builder.Property(s => s.Position).IsRequired().HasMaxLength(100);
-        builder.Property(s => s.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+        builder.Property(s => s.CreatedDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
         builder.Property(s => s.IsActive).HasDefaultValue(true);
 
         builder.HasOne(s => s.User)

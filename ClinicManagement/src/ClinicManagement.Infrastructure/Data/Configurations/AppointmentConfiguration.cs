@@ -11,7 +11,7 @@ public class AppointmentConfiguration : IEntityTypeConfiguration<Appointment>
         builder.ToTable("Appointments");
         builder.HasKey(a => a.Id);
         builder.Property(a => a.Status).IsRequired().HasMaxLength(50);
-        builder.Property(a => a.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+        builder.Property(a => a.CreatedDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
         builder.Property(a => a.IsActive).HasDefaultValue(true);
 
         builder.HasOne(a => a.Patient)

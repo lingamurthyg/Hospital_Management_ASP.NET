@@ -10,7 +10,7 @@ public class PatientConfiguration : IEntityTypeConfiguration<Patient>
     {
         builder.ToTable("Patients");
         builder.HasKey(p => p.Id);
-        builder.Property(p => p.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+        builder.Property(p => p.CreatedDate).HasDefaultValueSql("CURRENT_TIMESTAMP");
         builder.Property(p => p.IsActive).HasDefaultValue(true);
 
         builder.HasOne(p => p.User)
