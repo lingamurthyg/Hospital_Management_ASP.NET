@@ -15,7 +15,19 @@ builder.Host.UseSerilog();
 builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<ClinicDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"),
+        npgsqlOptions =>
+        {
+            npgsqlOptions.EnableRetryOnFailure(
+                maxRetryCount: 5,
+                maxRetryDelay: TimeSpan.FromSeconds(30),
+                errorCodesToAdd: null);
+        })
+    .UseSnakeCaseNamingConvention();
+
+    AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+});
 
 builder.Services.AddInfrastructureServices();
 builder.Services.AddApplicationServices();

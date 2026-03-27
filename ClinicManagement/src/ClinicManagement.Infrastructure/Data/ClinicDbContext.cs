@@ -1,5 +1,6 @@
 using ClinicManagement.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal;
 
 namespace ClinicManagement.Infrastructure.Data;
 
@@ -22,6 +23,23 @@ public class ClinicDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
+        // Set default schema for PostgreSQL
+        modelBuilder.HasDefaultSchema("public");
+
+        // Configure PostgreSQL extensions
+        modelBuilder.HasPostgresExtension("uuid-ossp");
+
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ClinicDbContext).Assembly);
+    }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        base.OnConfiguring(optionsBuilder);
+
+        // Configure migration history table with snake_case naming
+        if (optionsBuilder.IsConfigured && optionsBuilder.Options.FindExtension<NpgsqlOptionsExtension>() != null)
+        {
+            optionsBuilder.UseNpgsql(o => o.MigrationsHistoryTable("__ef_migrations_history", "public"));
+        }
     }
 }

@@ -117,3 +117,4 @@
 /modernize-data/studio-data/TNT1001/APP1139/transformed-code/60/studio-workspace/API Services/ClinicManagement/tests/ClinicManagement.UnitTests/obj/Debug/net8.0/ClinicManagement.UnitTests.pdb
 /modernize-data/studio-data/TNT1001/APP1139/transformed-code/60/studio-workspace/API Services/ClinicManagement/tests/ClinicManagement.UnitTests/obj/Debug/net8.0/ClinicManagement.UnitTests.genruntimeconfig.cache
 /modernize-data/studio-data/TNT1001/APP1139/transformed-code/60/studio-workspace/API Services/ClinicManagement/tests/ClinicManagement.UnitTests/obj/Debug/net8.0/ref/ClinicManagement.UnitTests.dll
+/modernize-data/studio-data/TNT1001/APP1139/transformed-code/60/studio-workspace/API Services/ClinicManagement/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/CoverletSourceRootsMapping_ClinicManagement.UnitTests

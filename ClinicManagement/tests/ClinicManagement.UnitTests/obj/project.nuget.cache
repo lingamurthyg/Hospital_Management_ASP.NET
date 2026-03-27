@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MQ39Tpjm38M=",
+  "dgSpecHash": "bAmaclshOBs=",
   "success": true,
   "projectFilePath": "/modernize-data/studio-data/TNT1001/APP1139/transformed-code/60/studio-workspace/API Services/ClinicManagement/tests/ClinicManagement.UnitTests/ClinicManagement.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/home/studioai/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/home/studioai/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/home/studioai/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
+    "/home/studioai/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/home/studioai/.nuget/packages/fluentassertions/6.12.0/fluentassertions.6.12.0.nupkg.sha512",
     "/home/studioai/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
     "/home/studioai/.nuget/packages/microsoft.codecoverage/17.9.0/microsoft.codecoverage.17.9.0.nupkg.sha512",

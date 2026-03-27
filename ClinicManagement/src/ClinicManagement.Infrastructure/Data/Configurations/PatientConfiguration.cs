@@ -22,7 +22,7 @@ public class PatientConfiguration : IEntityTypeConfiguration<Patient>
         builder.Property(p => p.BirthDate).IsRequired();
         builder.Property(p => p.Gender).IsRequired().HasConversion<int>();
         builder.Property(p => p.IsActive).HasDefaultValue(true).HasColumnName("Status");
-        builder.Property(p => p.CreatedDate).HasDefaultValueSql("GETUTCDATE()");
+        builder.Property(p => p.CreatedDate).HasDefaultValueSql("NOW()");
 
         builder.HasMany(p => p.Appointments)
             .WithOne(a => a.Patient)
