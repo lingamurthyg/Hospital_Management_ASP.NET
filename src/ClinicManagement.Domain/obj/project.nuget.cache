@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vXbsrBjvAuk=",
+  "success": true,
+  "projectFilePath": "/modernize-data/studio-data/TNT1001/APP1145/transformed-code/66/studio-workspace/API Backend Services/src/ClinicManagement.Domain/ClinicManagement.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/studioai/.nuget/packages/microsoft.netcore.app.ref/8.0.24/microsoft.netcore.app.ref.8.0.24.nupkg.sha512",
+    "/home/studioai/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.24/microsoft.aspnetcore.app.ref.8.0.24.nupkg.sha512"
+  ],
+  "logs": []
+}

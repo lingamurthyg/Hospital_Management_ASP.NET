@@ -1,0 +1,43 @@
+@page "{id:int?}"
+@model ClinicManagement.Web.Pages.Patients.DetailsModel
+@{
+    ViewData["Title"] = "Patient Details";
+}
+
+<h1>Patient Details</h1>
+
+<div>
+    <hr />
+    @if (Model.Patient != null)
+    {
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.Patient.PatientID</dd>
+
+            <dt class="col-sm-3">Name</dt>
+            <dd class="col-sm-9">@Model.Patient.Name</dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Model.Patient.Email</dd>
+
+            <dt class="col-sm-3">Phone</dt>
+            <dd class="col-sm-9">@Model.Patient.Phone</dd>
+
+            <dt class="col-sm-3">Address</dt>
+            <dd class="col-sm-9">@Model.Patient.Address</dd>
+
+            <dt class="col-sm-3">Birth Date</dt>
+            <dd class="col-sm-9">@Model.Patient.BirthDate.ToShortDateString()</dd>
+
+            <dt class="col-sm-3">Gender</dt>
+            <dd class="col-sm-9">@Model.Patient.Gender</dd>
+
+            <dt class="col-sm-3">Created Date</dt>
+            <dd class="col-sm-9">@Model.Patient.CreatedDate.ToShortDateString()</dd>
+        </dl>
+    }
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Patient?.PatientID" class="btn btn-primary">Edit</a>
+    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+</div>
