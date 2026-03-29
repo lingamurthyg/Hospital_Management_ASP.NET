@@ -18,9 +18,20 @@ public static class ServiceCollectionExtensions
     {
         // Register DbContext
         services.AddDbContext<ClinicDbContext>(options =>
-            options.UseSqlServer(
+        {
+            options.UseNpgsql(
                 configuration.GetConnectionString("DefaultConnection"),
-                b => b.MigrationsAssembly(typeof(ClinicDbContext).Assembly.FullName)));
+                b =>
+                {
+                    b.MigrationsAssembly(typeof(ClinicDbContext).Assembly.FullName);
+                    b.MigrationsHistoryTable("__efmigrations_history", "public");
+                    b.EnableRetryOnFailure(maxRetryCount: 3, maxRetryDelay: TimeSpan.FromSeconds(30), errorCodesToAdd: null);
+                })
+                .UseSnakeCaseNamingConvention()
+                .EnableSensitiveDataLogging();
+
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+        });
 
         // Register repositories
         services.AddScoped<IPatientRepository, PatientRepository>();

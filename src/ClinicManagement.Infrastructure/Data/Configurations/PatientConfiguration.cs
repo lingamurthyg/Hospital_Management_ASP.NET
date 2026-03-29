@@ -34,7 +34,7 @@ public class PatientConfiguration : IEntityTypeConfiguration<Patient>
             .HasMaxLength(200);
 
         builder.Property(p => p.CreatedDate)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
         builder.Property(p => p.IsActive)
             .HasDefaultValue(true);

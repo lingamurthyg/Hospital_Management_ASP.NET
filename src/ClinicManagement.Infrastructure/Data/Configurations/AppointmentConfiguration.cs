@@ -26,7 +26,7 @@ public class AppointmentConfiguration : IEntityTypeConfiguration<Appointment>
             .HasMaxLength(2000);
 
         builder.Property(a => a.CreatedDate)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
         builder.Property(a => a.IsActive)
             .HasDefaultValue(true);

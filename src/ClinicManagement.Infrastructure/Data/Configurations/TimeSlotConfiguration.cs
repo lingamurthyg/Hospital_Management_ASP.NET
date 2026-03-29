@@ -15,7 +15,7 @@ public class TimeSlotConfiguration : IEntityTypeConfiguration<TimeSlot>
             .HasDefaultValue(true);
 
         builder.Property(ts => ts.CreatedDate)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
         builder.Property(ts => ts.IsActive)
             .HasDefaultValue(true);

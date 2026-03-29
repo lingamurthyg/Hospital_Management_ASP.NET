@@ -24,10 +24,10 @@ public class BillConfiguration : IEntityTypeConfiguration<Bill>
             .HasMaxLength(1000);
 
         builder.Property(b => b.BillDate)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
         builder.Property(b => b.CreatedDate)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
         builder.Property(b => b.IsActive)
             .HasDefaultValue(true);

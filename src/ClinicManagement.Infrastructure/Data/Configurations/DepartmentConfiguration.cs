@@ -19,7 +19,7 @@ public class DepartmentConfiguration : IEntityTypeConfiguration<Department>
             .HasMaxLength(1000);
 
         builder.Property(d => d.CreatedDate)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
         builder.Property(d => d.IsActive)
             .HasDefaultValue(true);

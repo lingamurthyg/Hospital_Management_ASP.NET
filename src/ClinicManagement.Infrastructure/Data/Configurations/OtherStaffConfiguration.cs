@@ -34,7 +34,7 @@ public class OtherStaffConfiguration : IEntityTypeConfiguration<OtherStaff>
             .HasMaxLength(200);
 
         builder.Property(s => s.CreatedDate)
-            .HasDefaultValueSql("GETUTCDATE()");
+            .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
         builder.Property(s => s.IsActive)
             .HasDefaultValue(true);
