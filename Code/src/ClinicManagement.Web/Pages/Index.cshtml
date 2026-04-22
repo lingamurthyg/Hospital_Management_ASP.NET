@@ -1,0 +1,44 @@
+@page
+@model ClinicManagement.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Clinic Management System</h1>
+    <p class="lead">Manage your clinic operations efficiently</p>
+    
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Patient Portal</h5>
+                    <p class="card-text">Book appointments, view medical history, and manage your health records.</p>
+                    <a asp-page="/Login" asp-route-type="patient" class="btn btn-primary">Patient Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Doctor Portal</h5>
+                    <p class="card-text">Manage appointments, update patient records, and view schedules.</p>
+                    <a asp-page="/Login" asp-route-type="doctor" class="btn btn-success">Doctor Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Admin Portal</h5>
+                    <p class="card-text">Manage staff, doctors, departments, and clinic operations.</p>
+                    <a asp-page="/Login" asp-route-type="admin" class="btn btn-danger">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-5">
+        <a asp-page="/SignUp" class="btn btn-lg btn-outline-primary">New Patient? Sign Up Here</a>
+    </div>
+</div>
