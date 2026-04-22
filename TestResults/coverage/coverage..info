@@ -1,0 +1,1266 @@
+SF:/modernize-data/studio-data/TNT1001/APP319159/transformed-code/7/studio-workspace/Backend Services/Code/src/ClinicManagement.Application/Services/Services.cs
+FN:24,System.Void ClinicManagement.Application.Services.AuthService::.ctor(ClinicManagement.Domain.Interfaces.Repositories.IPatientRepository,ClinicManagement.Domain.Interfaces.Repositories.IDoctorRepository,ClinicManagement.Domain.Interfaces.Repositories.IAdminRepository,Microsoft.Extensions.Logging.ILogger`1<ClinicManagement.Application.Services.AuthService>)
+FNDA:0,System.Void ClinicManagement.Application.Services.AuthService::.ctor(ClinicManagement.Domain.Interfaces.Repositories.IPatientRepository,ClinicManagement.Domain.Interfaces.Repositories.IDoctorRepository,ClinicManagement.Domain.Interfaces.Repositories.IAdminRepository,Microsoft.Extensions.Logging.ILogger`1<ClinicManagement.Application.Services.AuthService>)
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+FN:37,System.Void ClinicManagement.Application.Services.AuthService/<LoginAsync>d__5::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.AuthService/<LoginAsync>d__5::MoveNext()
+DA:38,0
+DA:40,0
+DA:41,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:101,0
+BRDA:45,248,0,0
+BRDA:45,277,0,0
+BRDA:45,248,1,0
+BRDA:45,277,1,0
+BRDA:45,297,0,0
+BRDA:45,297,1,0
+BRDA:59,560,0,0
+BRDA:59,589,0,0
+BRDA:59,560,1,0
+BRDA:59,589,1,0
+BRDA:59,609,0,0
+BRDA:59,609,1,0
+BRDA:73,872,0,0
+BRDA:73,901,0,0
+BRDA:73,872,1,0
+BRDA:73,901,1,0
+BRDA:73,921,0,0
+BRDA:73,921,1,0
+FN:122,System.Void ClinicManagement.Application.Services.PatientService::.ctor(ClinicManagement.Domain.Interfaces.Repositories.IPatientRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<ClinicManagement.Application.Services.PatientService>)
+FNDA:0,System.Void ClinicManagement.Application.Services.PatientService::.ctor(ClinicManagement.Domain.Interfaces.Repositories.IPatientRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<ClinicManagement.Application.Services.PatientService>)
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+FN:158,System.Void ClinicManagement.Application.Services.PatientService/<CreateAsync>d__6::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.PatientService/<CreateAsync>d__6::MoveNext()
+DA:159,0
+DA:161,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:178,0
+BRDA:163,173,0,0
+BRDA:163,173,1,0
+FN:205,System.Void ClinicManagement.Application.Services.PatientService/<DeleteAsync>d__8::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.PatientService/<DeleteAsync>d__8::MoveNext()
+DA:206,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:217,0
+FN:130,System.Void ClinicManagement.Application.Services.PatientService/<GetAllAsync>d__4::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.PatientService/<GetAllAsync>d__4::MoveNext()
+DA:131,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:142,0
+FN:144,System.Void ClinicManagement.Application.Services.PatientService/<GetByIdAsync>d__5::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.PatientService/<GetByIdAsync>d__5::MoveNext()
+DA:145,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:156,0
+BRDA:149,172,0,0
+BRDA:149,172,1,0
+FN:219,System.Void ClinicManagement.Application.Services.PatientService/<SearchByNameAsync>d__9::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.PatientService/<SearchByNameAsync>d__9::MoveNext()
+DA:220,0
+DA:222,0
+DA:223,0
+DA:224,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:231,0
+FN:180,System.Void ClinicManagement.Application.Services.PatientService/<UpdateAsync>d__7::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.PatientService/<UpdateAsync>d__7::MoveNext()
+DA:181,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:203,0
+BRDA:185,189,0,0
+BRDA:185,189,1,0
+FN:253,System.Void ClinicManagement.Application.Services.DoctorService::.ctor(ClinicManagement.Domain.Interfaces.Repositories.IDoctorRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<ClinicManagement.Application.Services.DoctorService>)
+FNDA:0,System.Void ClinicManagement.Application.Services.DoctorService::.ctor(ClinicManagement.Domain.Interfaces.Repositories.IDoctorRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<ClinicManagement.Application.Services.DoctorService>)
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:259,0
+FN:289,System.Void ClinicManagement.Application.Services.DoctorService/<CreateAsync>d__6::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.DoctorService/<CreateAsync>d__6::MoveNext()
+DA:290,0
+DA:292,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:309,0
+BRDA:294,173,0,0
+BRDA:294,173,1,0
+FN:336,System.Void ClinicManagement.Application.Services.DoctorService/<DeleteAsync>d__8::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.DoctorService/<DeleteAsync>d__8::MoveNext()
+DA:337,0
+DA:339,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:344,0
+DA:345,0
+DA:346,0
+DA:347,0
+DA:348,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:354,0
+BRDA:341,189,0,0
+BRDA:341,189,1,0
+FN:261,System.Void ClinicManagement.Application.Services.DoctorService/<GetAllAsync>d__4::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.DoctorService/<GetAllAsync>d__4::MoveNext()
+DA:262,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:271,0
+DA:273,0
+FN:356,System.Void ClinicManagement.Application.Services.DoctorService/<GetByDepartmentAsync>d__9::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.DoctorService/<GetByDepartmentAsync>d__9::MoveNext()
+DA:357,0
+DA:359,0
+DA:360,0
+DA:361,0
+DA:363,0
+DA:364,0
+DA:365,0
+DA:366,0
+DA:368,0
+FN:275,System.Void ClinicManagement.Application.Services.DoctorService/<GetByIdAsync>d__5::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.DoctorService/<GetByIdAsync>d__5::MoveNext()
+DA:276,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:287,0
+BRDA:280,172,0,0
+BRDA:280,172,1,0
+FN:370,System.Void ClinicManagement.Application.Services.DoctorService/<SearchByNameAsync>d__10::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.DoctorService/<SearchByNameAsync>d__10::MoveNext()
+DA:371,0
+DA:373,0
+DA:374,0
+DA:375,0
+DA:377,0
+DA:378,0
+DA:379,0
+DA:380,0
+DA:382,0
+FN:311,System.Void ClinicManagement.Application.Services.DoctorService/<UpdateAsync>d__7::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.DoctorService/<UpdateAsync>d__7::MoveNext()
+DA:312,0
+DA:314,0
+DA:315,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:321,0
+DA:322,0
+DA:323,0
+DA:324,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:331,0
+DA:332,0
+DA:334,0
+BRDA:316,189,0,0
+BRDA:316,189,1,0
+FN:406,System.Void ClinicManagement.Application.Services.AppointmentService::.ctor(ClinicManagement.Domain.Interfaces.Repositories.IAppointmentRepository,ClinicManagement.Domain.Interfaces.Repositories.ISlotRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<ClinicManagement.Application.Services.AppointmentService>)
+FNDA:0,System.Void ClinicManagement.Application.Services.AppointmentService::.ctor(ClinicManagement.Domain.Interfaces.Repositories.IAppointmentRepository,ClinicManagement.Domain.Interfaces.Repositories.ISlotRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<ClinicManagement.Application.Services.AppointmentService>)
+DA:407,0
+DA:408,0
+DA:409,0
+DA:410,0
+DA:411,0
+DA:412,0
+DA:413,0
+DA:414,0
+DA:415,0
+DA:416,0
+DA:417,0
+FN:503,System.Void ClinicManagement.Application.Services.AppointmentService/<ApproveAsync>d__9::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.AppointmentService/<ApproveAsync>d__9::MoveNext()
+DA:504,0
+DA:506,0
+DA:507,0
+DA:508,0
+DA:509,0
+DA:510,0
+DA:513,0
+DA:514,0
+DA:516,0
+DA:517,0
+DA:518,0
+DA:519,0
+DA:520,0
+DA:521,0
+DA:522,0
+DA:524,0
+BRDA:508,189,0,0
+BRDA:508,189,1,0
+FN:526,System.Void ClinicManagement.Application.Services.AppointmentService/<CancelAsync>d__10::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.AppointmentService/<CancelAsync>d__10::MoveNext()
+DA:527,0
+DA:529,0
+DA:530,0
+DA:531,0
+DA:532,0
+DA:533,0
+DA:536,0
+DA:537,0
+DA:539,0
+DA:542,0
+DA:543,0
+DA:544,0
+DA:545,0
+DA:546,0
+DA:547,0
+DA:549,0
+DA:550,0
+DA:551,0
+DA:552,0
+DA:553,0
+DA:554,0
+DA:556,0
+BRDA:531,212,0,0
+BRDA:531,212,1,0
+BRDA:543,545,0,0
+BRDA:543,545,1,0
+FN:447,System.Void ClinicManagement.Application.Services.AppointmentService/<CreateAsync>d__7::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.AppointmentService/<CreateAsync>d__7::MoveNext()
+DA:448,0
+DA:450,0
+DA:451,0
+DA:452,0
+DA:453,0
+DA:454,0
+DA:457,0
+DA:458,0
+DA:459,0
+DA:461,0
+DA:464,0
+DA:465,0
+DA:467,0
+DA:468,0
+DA:470,0
+DA:471,0
+DA:472,0
+DA:473,0
+DA:475,0
+BRDA:452,203,0,0
+BRDA:452,203,1,0
+BRDA:452,226,0,0
+BRDA:452,226,1,0
+FN:433,System.Void ClinicManagement.Application.Services.AppointmentService/<GetByDoctorIdAsync>d__6::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.AppointmentService/<GetByDoctorIdAsync>d__6::MoveNext()
+DA:434,0
+DA:436,0
+DA:437,0
+DA:438,0
+DA:440,0
+DA:441,0
+DA:442,0
+DA:443,0
+DA:445,0
+FN:419,System.Void ClinicManagement.Application.Services.AppointmentService/<GetByPatientIdAsync>d__5::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.AppointmentService/<GetByPatientIdAsync>d__5::MoveNext()
+DA:420,0
+DA:422,0
+DA:423,0
+DA:424,0
+DA:426,0
+DA:427,0
+DA:428,0
+DA:429,0
+DA:431,0
+FN:558,System.Void ClinicManagement.Application.Services.AppointmentService/<GetPendingByDoctorAsync>d__11::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.AppointmentService/<GetPendingByDoctorAsync>d__11::MoveNext()
+DA:559,0
+DA:561,0
+DA:562,0
+DA:563,0
+DA:565,0
+DA:566,0
+DA:567,0
+DA:568,0
+DA:570,0
+FN:572,System.Void ClinicManagement.Application.Services.AppointmentService/<GetTodaysByDoctorAsync>d__12::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.AppointmentService/<GetTodaysByDoctorAsync>d__12::MoveNext()
+DA:573,0
+DA:575,0
+DA:576,0
+DA:577,0
+DA:579,0
+DA:580,0
+DA:581,0
+DA:582,0
+DA:584,0
+FN:477,System.Void ClinicManagement.Application.Services.AppointmentService/<UpdateAsync>d__8::MoveNext()
+FNDA:0,System.Void ClinicManagement.Application.Services.AppointmentService/<UpdateAsync>d__8::MoveNext()
+DA:478,0
+DA:480,0
+DA:481,0
+DA:482,0
+DA:483,0
+DA:484,0
+DA:487,0
+DA:488,0
+DA:489,0
+DA:490,0
+DA:491,0
+DA:493,0
+DA:494,0
+DA:495,0
+DA:496,0
+DA:497,0
+DA:498,0
+DA:499,0
+DA:501,0
+BRDA:482,189,0,0
+BRDA:482,189,1,0
+LF:350
+LH:0
+BRF:44
+BRH:0
+FNF:26
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP319159/transformed-code/7/studio-workspace/Backend Services/Code/src/ClinicManagement.Application/Mappings/MappingProfile.cs
+FN:78,System.Int32 ClinicManagement.Application.Mappings.MappingProfile::CalculateAge(System.DateTime)
+FNDA:0,System.Int32 ClinicManagement.Application.Mappings.MappingProfile::CalculateAge(System.DateTime)
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+BRDA:82,46,0,0
+BRDA:82,46,1,0
+FN:11,System.Void ClinicManagement.Application.Mappings.MappingProfile::.ctor()
+FNDA:0,System.Void ClinicManagement.Application.Mappings.MappingProfile::.ctor()
+DA:12,0
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:53,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+LF:56
+LH:0
+BRF:2
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP319159/transformed-code/7/studio-workspace/Backend Services/Code/src/ClinicManagement.Application/Extensions/ServiceCollectionExtensions.cs
+FN:12,Microsoft.Extensions.DependencyInjection.IServiceCollection ClinicManagement.Application.Extensions.ServiceCollectionExtensions::AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,Microsoft.Extensions.DependencyInjection.IServiceCollection ClinicManagement.Application.Extensions.ServiceCollectionExtensions::AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:13,0
+DA:15,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:23,0
+DA:24,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP319159/transformed-code/7/studio-workspace/Backend Services/Code/src/ClinicManagement.Application/DTOs/DTOs.cs
+FN:9,System.Int32 ClinicManagement.Application.DTOs.PatientDto::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.PatientDto::get_PatientID()
+DA:10,0
+FN:10,System.String ClinicManagement.Application.DTOs.PatientDto::get_Name()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientDto::get_Name()
+DA:11,0
+FN:11,System.String ClinicManagement.Application.DTOs.PatientDto::get_Email()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientDto::get_Email()
+DA:12,0
+FN:12,System.String ClinicManagement.Application.DTOs.PatientDto::get_Phone()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientDto::get_Phone()
+DA:13,0
+FN:13,System.String ClinicManagement.Application.DTOs.PatientDto::get_Address()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientDto::get_Address()
+DA:14,0
+FN:14,System.DateTime ClinicManagement.Application.DTOs.PatientDto::get_BirthDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.PatientDto::get_BirthDate()
+DA:15,0
+FN:15,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.PatientDto::get_Gender()
+FNDA:0,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.PatientDto::get_Gender()
+DA:16,0
+FN:16,System.Int32 ClinicManagement.Application.DTOs.PatientDto::get_Age()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.PatientDto::get_Age()
+DA:17,0
+FN:21,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Name()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Name()
+DA:22,0
+FN:22,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Email()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Email()
+DA:23,0
+FN:23,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Password()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Password()
+DA:24,0
+FN:24,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Phone()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Phone()
+DA:25,0
+FN:25,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Address()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientCreateDto::get_Address()
+DA:26,0
+FN:26,System.DateTime ClinicManagement.Application.DTOs.PatientCreateDto::get_BirthDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.PatientCreateDto::get_BirthDate()
+DA:27,0
+FN:27,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.PatientCreateDto::get_Gender()
+FNDA:0,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.PatientCreateDto::get_Gender()
+DA:28,0
+FN:32,System.String ClinicManagement.Application.DTOs.PatientUpdateDto::get_Name()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientUpdateDto::get_Name()
+DA:33,0
+FN:33,System.String ClinicManagement.Application.DTOs.PatientUpdateDto::get_Phone()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientUpdateDto::get_Phone()
+DA:34,0
+FN:34,System.String ClinicManagement.Application.DTOs.PatientUpdateDto::get_Address()
+FNDA:0,System.String ClinicManagement.Application.DTOs.PatientUpdateDto::get_Address()
+DA:35,0
+FN:42,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_DoctorID()
+DA:43,0
+FN:43,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Name()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Name()
+DA:44,0
+FN:44,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Email()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Email()
+DA:45,0
+FN:45,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Phone()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Phone()
+DA:46,0
+FN:46,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Address()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Address()
+DA:47,0
+FN:47,System.DateTime ClinicManagement.Application.DTOs.DoctorDto::get_BirthDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.DoctorDto::get_BirthDate()
+DA:48,0
+FN:48,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.DoctorDto::get_Gender()
+FNDA:0,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.DoctorDto::get_Gender()
+DA:49,0
+FN:49,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_DeptNo()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_DeptNo()
+DA:50,0
+FN:50,System.String ClinicManagement.Application.DTOs.DoctorDto::get_DepartmentName()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorDto::get_DepartmentName()
+DA:51,0
+FN:51,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_Experience()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_Experience()
+DA:52,0
+FN:52,System.Decimal ClinicManagement.Application.DTOs.DoctorDto::get_ChargesPerVisit()
+FNDA:0,System.Decimal ClinicManagement.Application.DTOs.DoctorDto::get_ChargesPerVisit()
+DA:53,0
+FN:53,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Qualification()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Qualification()
+DA:54,0
+FN:54,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Specialization()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorDto::get_Specialization()
+DA:55,0
+FN:55,System.Decimal ClinicManagement.Application.DTOs.DoctorDto::get_ReputationIndex()
+FNDA:0,System.Decimal ClinicManagement.Application.DTOs.DoctorDto::get_ReputationIndex()
+DA:56,0
+FN:56,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_PatientsTreated()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_PatientsTreated()
+DA:57,0
+FN:57,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_Age()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.DoctorDto::get_Age()
+DA:58,0
+FN:62,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Name()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Name()
+DA:63,0
+FN:63,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Email()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Email()
+DA:64,0
+FN:64,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Password()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Password()
+DA:65,0
+FN:65,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Phone()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Phone()
+DA:66,0
+FN:66,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Address()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Address()
+DA:67,0
+FN:67,System.DateTime ClinicManagement.Application.DTOs.DoctorCreateDto::get_BirthDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.DoctorCreateDto::get_BirthDate()
+DA:68,0
+FN:68,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.DoctorCreateDto::get_Gender()
+FNDA:0,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.DoctorCreateDto::get_Gender()
+DA:69,0
+FN:69,System.Int32 ClinicManagement.Application.DTOs.DoctorCreateDto::get_DeptNo()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.DoctorCreateDto::get_DeptNo()
+DA:70,0
+FN:70,System.Int32 ClinicManagement.Application.DTOs.DoctorCreateDto::get_Experience()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.DoctorCreateDto::get_Experience()
+DA:71,0
+FN:71,System.Decimal ClinicManagement.Application.DTOs.DoctorCreateDto::get_Salary()
+FNDA:0,System.Decimal ClinicManagement.Application.DTOs.DoctorCreateDto::get_Salary()
+DA:72,0
+FN:72,System.Decimal ClinicManagement.Application.DTOs.DoctorCreateDto::get_ChargesPerVisit()
+FNDA:0,System.Decimal ClinicManagement.Application.DTOs.DoctorCreateDto::get_ChargesPerVisit()
+DA:73,0
+FN:73,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Qualification()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Qualification()
+DA:74,0
+FN:74,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Specialization()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorCreateDto::get_Specialization()
+DA:75,0
+FN:79,System.String ClinicManagement.Application.DTOs.DoctorUpdateDto::get_Phone()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorUpdateDto::get_Phone()
+DA:80,0
+FN:80,System.String ClinicManagement.Application.DTOs.DoctorUpdateDto::get_Address()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DoctorUpdateDto::get_Address()
+DA:81,0
+FN:81,System.Decimal ClinicManagement.Application.DTOs.DoctorUpdateDto::get_ChargesPerVisit()
+FNDA:0,System.Decimal ClinicManagement.Application.DTOs.DoctorUpdateDto::get_ChargesPerVisit()
+DA:82,0
+FN:89,System.Int32 ClinicManagement.Application.DTOs.DepartmentDto::get_DeptNo()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.DepartmentDto::get_DeptNo()
+DA:90,0
+FN:90,System.String ClinicManagement.Application.DTOs.DepartmentDto::get_DeptName()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DepartmentDto::get_DeptName()
+DA:91,0
+FN:91,System.String ClinicManagement.Application.DTOs.DepartmentDto::get_Description()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DepartmentDto::get_Description()
+DA:92,0
+FN:92,System.Int32 ClinicManagement.Application.DTOs.DepartmentDto::get_DoctorCount()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.DepartmentDto::get_DoctorCount()
+DA:93,0
+FN:97,System.String ClinicManagement.Application.DTOs.DepartmentCreateDto::get_DeptName()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DepartmentCreateDto::get_DeptName()
+DA:98,0
+FN:98,System.String ClinicManagement.Application.DTOs.DepartmentCreateDto::get_Description()
+FNDA:0,System.String ClinicManagement.Application.DTOs.DepartmentCreateDto::get_Description()
+DA:99,0
+FN:106,System.Int32 ClinicManagement.Application.DTOs.AppointmentDto::get_AppointmentID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.AppointmentDto::get_AppointmentID()
+DA:107,0
+FN:107,System.Int32 ClinicManagement.Application.DTOs.AppointmentDto::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.AppointmentDto::get_PatientID()
+DA:108,0
+FN:108,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_PatientName()
+FNDA:0,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_PatientName()
+DA:109,0
+FN:109,System.Int32 ClinicManagement.Application.DTOs.AppointmentDto::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.AppointmentDto::get_DoctorID()
+DA:110,0
+FN:110,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_DoctorName()
+FNDA:0,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_DoctorName()
+DA:111,0
+FN:111,System.DateTime ClinicManagement.Application.DTOs.AppointmentDto::get_AppointmentDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.AppointmentDto::get_AppointmentDate()
+DA:112,0
+FN:112,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_Timings()
+FNDA:0,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_Timings()
+DA:113,0
+FN:113,ClinicManagement.Domain.Enums.AppointmentStatus ClinicManagement.Application.DTOs.AppointmentDto::get_Status()
+FNDA:0,ClinicManagement.Domain.Enums.AppointmentStatus ClinicManagement.Application.DTOs.AppointmentDto::get_Status()
+DA:114,0
+FN:114,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_Disease()
+FNDA:0,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_Disease()
+DA:115,0
+FN:115,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_Progress()
+FNDA:0,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_Progress()
+DA:116,0
+FN:116,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_Prescription()
+FNDA:0,System.String ClinicManagement.Application.DTOs.AppointmentDto::get_Prescription()
+DA:117,0
+FN:121,System.Int32 ClinicManagement.Application.DTOs.AppointmentCreateDto::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.AppointmentCreateDto::get_PatientID()
+DA:122,0
+FN:122,System.Int32 ClinicManagement.Application.DTOs.AppointmentCreateDto::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.AppointmentCreateDto::get_DoctorID()
+DA:123,0
+FN:123,System.Int32 ClinicManagement.Application.DTOs.AppointmentCreateDto::get_SlotID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.AppointmentCreateDto::get_SlotID()
+DA:124,0
+FN:128,System.String ClinicManagement.Application.DTOs.AppointmentUpdateDto::get_Disease()
+FNDA:0,System.String ClinicManagement.Application.DTOs.AppointmentUpdateDto::get_Disease()
+DA:129,0
+FN:129,System.String ClinicManagement.Application.DTOs.AppointmentUpdateDto::get_Progress()
+FNDA:0,System.String ClinicManagement.Application.DTOs.AppointmentUpdateDto::get_Progress()
+DA:130,0
+FN:130,System.String ClinicManagement.Application.DTOs.AppointmentUpdateDto::get_Prescription()
+FNDA:0,System.String ClinicManagement.Application.DTOs.AppointmentUpdateDto::get_Prescription()
+DA:131,0
+FN:131,ClinicManagement.Domain.Enums.AppointmentStatus ClinicManagement.Application.DTOs.AppointmentUpdateDto::get_Status()
+FNDA:0,ClinicManagement.Domain.Enums.AppointmentStatus ClinicManagement.Application.DTOs.AppointmentUpdateDto::get_Status()
+DA:132,0
+FN:139,System.Int32 ClinicManagement.Application.DTOs.SlotDto::get_SlotID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.SlotDto::get_SlotID()
+DA:140,0
+FN:140,System.Int32 ClinicManagement.Application.DTOs.SlotDto::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.SlotDto::get_DoctorID()
+DA:141,0
+FN:141,System.DateTime ClinicManagement.Application.DTOs.SlotDto::get_SlotDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.SlotDto::get_SlotDate()
+DA:142,0
+FN:142,System.String ClinicManagement.Application.DTOs.SlotDto::get_Timings()
+FNDA:0,System.String ClinicManagement.Application.DTOs.SlotDto::get_Timings()
+DA:143,0
+FN:143,System.Boolean ClinicManagement.Application.DTOs.SlotDto::get_IsAvailable()
+FNDA:0,System.Boolean ClinicManagement.Application.DTOs.SlotDto::get_IsAvailable()
+DA:144,0
+FN:151,System.Int32 ClinicManagement.Application.DTOs.BillDto::get_BillID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.BillDto::get_BillID()
+DA:152,0
+FN:152,System.Int32 ClinicManagement.Application.DTOs.BillDto::get_AppointmentID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.BillDto::get_AppointmentID()
+DA:153,0
+FN:153,System.Int32 ClinicManagement.Application.DTOs.BillDto::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.BillDto::get_PatientID()
+DA:154,0
+FN:154,System.String ClinicManagement.Application.DTOs.BillDto::get_PatientName()
+FNDA:0,System.String ClinicManagement.Application.DTOs.BillDto::get_PatientName()
+DA:155,0
+FN:155,System.Int32 ClinicManagement.Application.DTOs.BillDto::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.BillDto::get_DoctorID()
+DA:156,0
+FN:156,System.String ClinicManagement.Application.DTOs.BillDto::get_DoctorName()
+FNDA:0,System.String ClinicManagement.Application.DTOs.BillDto::get_DoctorName()
+DA:157,0
+FN:157,System.Decimal ClinicManagement.Application.DTOs.BillDto::get_Amount()
+FNDA:0,System.Decimal ClinicManagement.Application.DTOs.BillDto::get_Amount()
+DA:158,0
+FN:158,ClinicManagement.Domain.Enums.PaymentStatus ClinicManagement.Application.DTOs.BillDto::get_PaymentStatus()
+FNDA:0,ClinicManagement.Domain.Enums.PaymentStatus ClinicManagement.Application.DTOs.BillDto::get_PaymentStatus()
+DA:159,0
+FN:159,System.DateTime ClinicManagement.Application.DTOs.BillDto::get_BillDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.BillDto::get_BillDate()
+DA:160,0
+FN:164,System.Int32 ClinicManagement.Application.DTOs.BillCreateDto::get_AppointmentID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.BillCreateDto::get_AppointmentID()
+DA:165,0
+FN:165,System.Int32 ClinicManagement.Application.DTOs.BillCreateDto::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.BillCreateDto::get_PatientID()
+DA:166,0
+FN:166,System.Int32 ClinicManagement.Application.DTOs.BillCreateDto::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.BillCreateDto::get_DoctorID()
+DA:167,0
+FN:167,System.Decimal ClinicManagement.Application.DTOs.BillCreateDto::get_Amount()
+FNDA:0,System.Decimal ClinicManagement.Application.DTOs.BillCreateDto::get_Amount()
+DA:168,0
+FN:175,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_FeedbackID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_FeedbackID()
+DA:176,0
+FN:176,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_AppointmentID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_AppointmentID()
+DA:177,0
+FN:177,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_PatientID()
+DA:178,0
+FN:178,System.String ClinicManagement.Application.DTOs.FeedbackDto::get_PatientName()
+FNDA:0,System.String ClinicManagement.Application.DTOs.FeedbackDto::get_PatientName()
+DA:179,0
+FN:179,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_DoctorID()
+DA:180,0
+FN:180,System.String ClinicManagement.Application.DTOs.FeedbackDto::get_DoctorName()
+FNDA:0,System.String ClinicManagement.Application.DTOs.FeedbackDto::get_DoctorName()
+DA:181,0
+FN:181,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_Rating()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.FeedbackDto::get_Rating()
+DA:182,0
+FN:182,System.String ClinicManagement.Application.DTOs.FeedbackDto::get_Comments()
+FNDA:0,System.String ClinicManagement.Application.DTOs.FeedbackDto::get_Comments()
+DA:183,0
+FN:183,System.DateTime ClinicManagement.Application.DTOs.FeedbackDto::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.FeedbackDto::get_CreatedDate()
+DA:184,0
+FN:188,System.Int32 ClinicManagement.Application.DTOs.FeedbackCreateDto::get_AppointmentID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.FeedbackCreateDto::get_AppointmentID()
+DA:189,0
+FN:189,System.Int32 ClinicManagement.Application.DTOs.FeedbackCreateDto::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.FeedbackCreateDto::get_PatientID()
+DA:190,0
+FN:190,System.Int32 ClinicManagement.Application.DTOs.FeedbackCreateDto::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.FeedbackCreateDto::get_DoctorID()
+DA:191,0
+FN:191,System.Int32 ClinicManagement.Application.DTOs.FeedbackCreateDto::get_Rating()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.FeedbackCreateDto::get_Rating()
+DA:192,0
+FN:192,System.String ClinicManagement.Application.DTOs.FeedbackCreateDto::get_Comments()
+FNDA:0,System.String ClinicManagement.Application.DTOs.FeedbackCreateDto::get_Comments()
+DA:193,0
+FN:200,System.Int32 ClinicManagement.Application.DTOs.StaffDto::get_StaffID()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.StaffDto::get_StaffID()
+DA:201,0
+FN:201,System.String ClinicManagement.Application.DTOs.StaffDto::get_Name()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffDto::get_Name()
+DA:202,0
+FN:202,System.String ClinicManagement.Application.DTOs.StaffDto::get_Phone()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffDto::get_Phone()
+DA:203,0
+FN:203,System.String ClinicManagement.Application.DTOs.StaffDto::get_Address()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffDto::get_Address()
+DA:204,0
+FN:204,System.DateTime ClinicManagement.Application.DTOs.StaffDto::get_BirthDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.StaffDto::get_BirthDate()
+DA:205,0
+FN:205,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.StaffDto::get_Gender()
+FNDA:0,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.StaffDto::get_Gender()
+DA:206,0
+FN:206,System.String ClinicManagement.Application.DTOs.StaffDto::get_Designation()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffDto::get_Designation()
+DA:207,0
+FN:207,System.String ClinicManagement.Application.DTOs.StaffDto::get_Qualification()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffDto::get_Qualification()
+DA:208,0
+FN:208,System.Decimal ClinicManagement.Application.DTOs.StaffDto::get_Salary()
+FNDA:0,System.Decimal ClinicManagement.Application.DTOs.StaffDto::get_Salary()
+DA:209,0
+FN:213,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Name()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Name()
+DA:214,0
+FN:214,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Phone()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Phone()
+DA:215,0
+FN:215,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Address()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Address()
+DA:216,0
+FN:216,System.DateTime ClinicManagement.Application.DTOs.StaffCreateDto::get_BirthDate()
+FNDA:0,System.DateTime ClinicManagement.Application.DTOs.StaffCreateDto::get_BirthDate()
+DA:217,0
+FN:217,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.StaffCreateDto::get_Gender()
+FNDA:0,ClinicManagement.Domain.Enums.Gender ClinicManagement.Application.DTOs.StaffCreateDto::get_Gender()
+DA:218,0
+FN:218,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Designation()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Designation()
+DA:219,0
+FN:219,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Qualification()
+FNDA:0,System.String ClinicManagement.Application.DTOs.StaffCreateDto::get_Qualification()
+DA:220,0
+FN:220,System.Decimal ClinicManagement.Application.DTOs.StaffCreateDto::get_Salary()
+FNDA:0,System.Decimal ClinicManagement.Application.DTOs.StaffCreateDto::get_Salary()
+DA:221,0
+FN:228,System.String ClinicManagement.Application.DTOs.LoginDto::get_Email()
+FNDA:0,System.String ClinicManagement.Application.DTOs.LoginDto::get_Email()
+DA:229,0
+FN:229,System.String ClinicManagement.Application.DTOs.LoginDto::get_Password()
+FNDA:0,System.String ClinicManagement.Application.DTOs.LoginDto::get_Password()
+DA:230,0
+FN:234,System.Boolean ClinicManagement.Application.DTOs.LoginResultDto::get_Success()
+FNDA:0,System.Boolean ClinicManagement.Application.DTOs.LoginResultDto::get_Success()
+DA:235,0
+FN:235,System.Int32 ClinicManagement.Application.DTOs.LoginResultDto::get_UserId()
+FNDA:0,System.Int32 ClinicManagement.Application.DTOs.LoginResultDto::get_UserId()
+DA:236,0
+FN:236,ClinicManagement.Domain.Enums.UserType ClinicManagement.Application.DTOs.LoginResultDto::get_UserType()
+FNDA:0,ClinicManagement.Domain.Enums.UserType ClinicManagement.Application.DTOs.LoginResultDto::get_UserType()
+DA:237,0
+FN:237,System.String ClinicManagement.Application.DTOs.LoginResultDto::get_Message()
+FNDA:0,System.String ClinicManagement.Application.DTOs.LoginResultDto::get_Message()
+DA:238,0
+LF:129
+LH:0
+BRF:0
+BRH:0
+FNF:129
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP319159/transformed-code/7/studio-workspace/Backend Services/Code/src/ClinicManagement.Domain/Entities/Entities.cs
+FN:9,System.Int32 ClinicManagement.Domain.Entities.Patient::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Patient::get_PatientID()
+DA:10,0
+FN:10,System.String ClinicManagement.Domain.Entities.Patient::get_Name()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Patient::get_Name()
+DA:11,0
+FN:11,System.String ClinicManagement.Domain.Entities.Patient::get_Email()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Patient::get_Email()
+DA:12,0
+FN:12,System.String ClinicManagement.Domain.Entities.Patient::get_Password()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Patient::get_Password()
+DA:13,0
+FN:13,System.String ClinicManagement.Domain.Entities.Patient::get_Phone()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Patient::get_Phone()
+DA:14,0
+FN:14,System.String ClinicManagement.Domain.Entities.Patient::get_Address()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Patient::get_Address()
+DA:15,0
+FN:15,System.DateTime ClinicManagement.Domain.Entities.Patient::get_BirthDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Patient::get_BirthDate()
+DA:16,0
+FN:16,ClinicManagement.Domain.Enums.Gender ClinicManagement.Domain.Entities.Patient::get_Gender()
+FNDA:0,ClinicManagement.Domain.Enums.Gender ClinicManagement.Domain.Entities.Patient::get_Gender()
+DA:17,0
+FN:17,System.DateTime ClinicManagement.Domain.Entities.Patient::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Patient::get_CreatedDate()
+DA:18,0
+FN:18,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Patient::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Patient::get_ModifiedDate()
+DA:19,0
+FN:19,System.Boolean ClinicManagement.Domain.Entities.Patient::get_IsActive()
+FNDA:0,System.Boolean ClinicManagement.Domain.Entities.Patient::get_IsActive()
+DA:20,0
+FN:22,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Appointment> ClinicManagement.Domain.Entities.Patient::get_Appointments()
+FNDA:0,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Appointment> ClinicManagement.Domain.Entities.Patient::get_Appointments()
+DA:23,0
+FN:23,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Feedback> ClinicManagement.Domain.Entities.Patient::get_Feedbacks()
+FNDA:0,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Feedback> ClinicManagement.Domain.Entities.Patient::get_Feedbacks()
+DA:24,0
+FN:31,System.Int32 ClinicManagement.Domain.Entities.Doctor::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Doctor::get_DoctorID()
+DA:32,0
+FN:32,System.String ClinicManagement.Domain.Entities.Doctor::get_Name()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Doctor::get_Name()
+DA:33,0
+FN:33,System.String ClinicManagement.Domain.Entities.Doctor::get_Email()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Doctor::get_Email()
+DA:34,0
+FN:34,System.String ClinicManagement.Domain.Entities.Doctor::get_Password()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Doctor::get_Password()
+DA:35,0
+FN:35,System.String ClinicManagement.Domain.Entities.Doctor::get_Phone()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Doctor::get_Phone()
+DA:36,0
+FN:36,System.String ClinicManagement.Domain.Entities.Doctor::get_Address()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Doctor::get_Address()
+DA:37,0
+FN:37,System.DateTime ClinicManagement.Domain.Entities.Doctor::get_BirthDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Doctor::get_BirthDate()
+DA:38,0
+FN:38,ClinicManagement.Domain.Enums.Gender ClinicManagement.Domain.Entities.Doctor::get_Gender()
+FNDA:0,ClinicManagement.Domain.Enums.Gender ClinicManagement.Domain.Entities.Doctor::get_Gender()
+DA:39,0
+FN:39,System.Int32 ClinicManagement.Domain.Entities.Doctor::get_DeptNo()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Doctor::get_DeptNo()
+DA:40,0
+FN:40,System.Int32 ClinicManagement.Domain.Entities.Doctor::get_Experience()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Doctor::get_Experience()
+DA:41,0
+FN:41,System.Decimal ClinicManagement.Domain.Entities.Doctor::get_Salary()
+FNDA:0,System.Decimal ClinicManagement.Domain.Entities.Doctor::get_Salary()
+DA:42,0
+FN:42,System.Decimal ClinicManagement.Domain.Entities.Doctor::get_ChargesPerVisit()
+FNDA:0,System.Decimal ClinicManagement.Domain.Entities.Doctor::get_ChargesPerVisit()
+DA:43,0
+FN:43,System.String ClinicManagement.Domain.Entities.Doctor::get_Qualification()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Doctor::get_Qualification()
+DA:44,0
+FN:44,System.String ClinicManagement.Domain.Entities.Doctor::get_Specialization()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Doctor::get_Specialization()
+DA:45,0
+FN:45,System.Decimal ClinicManagement.Domain.Entities.Doctor::get_ReputationIndex()
+FNDA:0,System.Decimal ClinicManagement.Domain.Entities.Doctor::get_ReputationIndex()
+DA:46,0
+FN:46,System.Int32 ClinicManagement.Domain.Entities.Doctor::get_PatientsTreated()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Doctor::get_PatientsTreated()
+DA:47,0
+FN:47,System.DateTime ClinicManagement.Domain.Entities.Doctor::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Doctor::get_CreatedDate()
+DA:48,0
+FN:48,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Doctor::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Doctor::get_ModifiedDate()
+DA:49,0
+FN:49,System.Boolean ClinicManagement.Domain.Entities.Doctor::get_Status()
+FNDA:0,System.Boolean ClinicManagement.Domain.Entities.Doctor::get_Status()
+DA:50,0
+FN:52,ClinicManagement.Domain.Entities.Department ClinicManagement.Domain.Entities.Doctor::get_Department()
+FNDA:0,ClinicManagement.Domain.Entities.Department ClinicManagement.Domain.Entities.Doctor::get_Department()
+DA:53,0
+FN:53,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Appointment> ClinicManagement.Domain.Entities.Doctor::get_Appointments()
+FNDA:0,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Appointment> ClinicManagement.Domain.Entities.Doctor::get_Appointments()
+DA:54,0
+FN:54,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Feedback> ClinicManagement.Domain.Entities.Doctor::get_Feedbacks()
+FNDA:0,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Feedback> ClinicManagement.Domain.Entities.Doctor::get_Feedbacks()
+DA:55,0
+FN:62,System.Int32 ClinicManagement.Domain.Entities.Department::get_DeptNo()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Department::get_DeptNo()
+DA:63,0
+FN:63,System.String ClinicManagement.Domain.Entities.Department::get_DeptName()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Department::get_DeptName()
+DA:64,0
+FN:64,System.String ClinicManagement.Domain.Entities.Department::get_Description()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Department::get_Description()
+DA:65,0
+FN:65,System.DateTime ClinicManagement.Domain.Entities.Department::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Department::get_CreatedDate()
+DA:66,0
+FN:66,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Department::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Department::get_ModifiedDate()
+DA:67,0
+FN:67,System.Boolean ClinicManagement.Domain.Entities.Department::get_IsActive()
+FNDA:0,System.Boolean ClinicManagement.Domain.Entities.Department::get_IsActive()
+DA:68,0
+FN:70,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Doctor> ClinicManagement.Domain.Entities.Department::get_Doctors()
+FNDA:0,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Doctor> ClinicManagement.Domain.Entities.Department::get_Doctors()
+DA:71,0
+FN:78,System.Int32 ClinicManagement.Domain.Entities.Appointment::get_AppointmentID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Appointment::get_AppointmentID()
+DA:79,0
+FN:79,System.Int32 ClinicManagement.Domain.Entities.Appointment::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Appointment::get_PatientID()
+DA:80,0
+FN:80,System.Int32 ClinicManagement.Domain.Entities.Appointment::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Appointment::get_DoctorID()
+DA:81,0
+FN:81,System.Int32 ClinicManagement.Domain.Entities.Appointment::get_SlotID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Appointment::get_SlotID()
+DA:82,0
+FN:82,System.DateTime ClinicManagement.Domain.Entities.Appointment::get_AppointmentDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Appointment::get_AppointmentDate()
+DA:83,0
+FN:83,System.String ClinicManagement.Domain.Entities.Appointment::get_Timings()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Appointment::get_Timings()
+DA:84,0
+FN:84,ClinicManagement.Domain.Enums.AppointmentStatus ClinicManagement.Domain.Entities.Appointment::get_Status()
+FNDA:0,ClinicManagement.Domain.Enums.AppointmentStatus ClinicManagement.Domain.Entities.Appointment::get_Status()
+DA:85,0
+FN:85,System.String ClinicManagement.Domain.Entities.Appointment::get_Disease()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Appointment::get_Disease()
+DA:86,0
+FN:86,System.String ClinicManagement.Domain.Entities.Appointment::get_Progress()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Appointment::get_Progress()
+DA:87,0
+FN:87,System.String ClinicManagement.Domain.Entities.Appointment::get_Prescription()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Appointment::get_Prescription()
+DA:88,0
+FN:88,System.DateTime ClinicManagement.Domain.Entities.Appointment::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Appointment::get_CreatedDate()
+DA:89,0
+FN:89,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Appointment::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Appointment::get_ModifiedDate()
+DA:90,0
+FN:92,ClinicManagement.Domain.Entities.Patient ClinicManagement.Domain.Entities.Appointment::get_Patient()
+FNDA:0,ClinicManagement.Domain.Entities.Patient ClinicManagement.Domain.Entities.Appointment::get_Patient()
+DA:93,0
+FN:93,ClinicManagement.Domain.Entities.Doctor ClinicManagement.Domain.Entities.Appointment::get_Doctor()
+FNDA:0,ClinicManagement.Domain.Entities.Doctor ClinicManagement.Domain.Entities.Appointment::get_Doctor()
+DA:94,0
+FN:94,ClinicManagement.Domain.Entities.Slot ClinicManagement.Domain.Entities.Appointment::get_Slot()
+FNDA:0,ClinicManagement.Domain.Entities.Slot ClinicManagement.Domain.Entities.Appointment::get_Slot()
+DA:95,0
+FN:95,ClinicManagement.Domain.Entities.Bill ClinicManagement.Domain.Entities.Appointment::get_Bill()
+FNDA:0,ClinicManagement.Domain.Entities.Bill ClinicManagement.Domain.Entities.Appointment::get_Bill()
+DA:96,0
+FN:103,System.Int32 ClinicManagement.Domain.Entities.Slot::get_SlotID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Slot::get_SlotID()
+DA:104,0
+FN:104,System.Int32 ClinicManagement.Domain.Entities.Slot::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Slot::get_DoctorID()
+DA:105,0
+FN:105,System.DateTime ClinicManagement.Domain.Entities.Slot::get_SlotDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Slot::get_SlotDate()
+DA:106,0
+FN:106,System.String ClinicManagement.Domain.Entities.Slot::get_Timings()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Slot::get_Timings()
+DA:107,0
+FN:107,System.Boolean ClinicManagement.Domain.Entities.Slot::get_IsAvailable()
+FNDA:0,System.Boolean ClinicManagement.Domain.Entities.Slot::get_IsAvailable()
+DA:108,0
+FN:108,System.DateTime ClinicManagement.Domain.Entities.Slot::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Slot::get_CreatedDate()
+DA:109,0
+FN:109,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Slot::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Slot::get_ModifiedDate()
+DA:110,0
+FN:112,ClinicManagement.Domain.Entities.Doctor ClinicManagement.Domain.Entities.Slot::get_Doctor()
+FNDA:0,ClinicManagement.Domain.Entities.Doctor ClinicManagement.Domain.Entities.Slot::get_Doctor()
+DA:113,0
+FN:113,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Appointment> ClinicManagement.Domain.Entities.Slot::get_Appointments()
+FNDA:0,System.Collections.Generic.ICollection`1<ClinicManagement.Domain.Entities.Appointment> ClinicManagement.Domain.Entities.Slot::get_Appointments()
+DA:114,0
+FN:121,System.Int32 ClinicManagement.Domain.Entities.Bill::get_BillID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Bill::get_BillID()
+DA:122,0
+FN:122,System.Int32 ClinicManagement.Domain.Entities.Bill::get_AppointmentID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Bill::get_AppointmentID()
+DA:123,0
+FN:123,System.Int32 ClinicManagement.Domain.Entities.Bill::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Bill::get_PatientID()
+DA:124,0
+FN:124,System.Int32 ClinicManagement.Domain.Entities.Bill::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Bill::get_DoctorID()
+DA:125,0
+FN:125,System.Decimal ClinicManagement.Domain.Entities.Bill::get_Amount()
+FNDA:0,System.Decimal ClinicManagement.Domain.Entities.Bill::get_Amount()
+DA:126,0
+FN:126,ClinicManagement.Domain.Enums.PaymentStatus ClinicManagement.Domain.Entities.Bill::get_PaymentStatus()
+FNDA:0,ClinicManagement.Domain.Enums.PaymentStatus ClinicManagement.Domain.Entities.Bill::get_PaymentStatus()
+DA:127,0
+FN:127,System.DateTime ClinicManagement.Domain.Entities.Bill::get_BillDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Bill::get_BillDate()
+DA:128,0
+FN:128,System.DateTime ClinicManagement.Domain.Entities.Bill::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Bill::get_CreatedDate()
+DA:129,0
+FN:129,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Bill::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Bill::get_ModifiedDate()
+DA:130,0
+FN:132,ClinicManagement.Domain.Entities.Appointment ClinicManagement.Domain.Entities.Bill::get_Appointment()
+FNDA:0,ClinicManagement.Domain.Entities.Appointment ClinicManagement.Domain.Entities.Bill::get_Appointment()
+DA:133,0
+FN:133,ClinicManagement.Domain.Entities.Patient ClinicManagement.Domain.Entities.Bill::get_Patient()
+FNDA:0,ClinicManagement.Domain.Entities.Patient ClinicManagement.Domain.Entities.Bill::get_Patient()
+DA:134,0
+FN:134,ClinicManagement.Domain.Entities.Doctor ClinicManagement.Domain.Entities.Bill::get_Doctor()
+FNDA:0,ClinicManagement.Domain.Entities.Doctor ClinicManagement.Domain.Entities.Bill::get_Doctor()
+DA:135,0
+FN:142,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_FeedbackID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_FeedbackID()
+DA:143,0
+FN:143,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_AppointmentID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_AppointmentID()
+DA:144,0
+FN:144,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_PatientID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_PatientID()
+DA:145,0
+FN:145,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_DoctorID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_DoctorID()
+DA:146,0
+FN:146,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_Rating()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Feedback::get_Rating()
+DA:147,0
+FN:147,System.String ClinicManagement.Domain.Entities.Feedback::get_Comments()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Feedback::get_Comments()
+DA:148,0
+FN:148,System.DateTime ClinicManagement.Domain.Entities.Feedback::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Feedback::get_CreatedDate()
+DA:149,0
+FN:151,ClinicManagement.Domain.Entities.Patient ClinicManagement.Domain.Entities.Feedback::get_Patient()
+FNDA:0,ClinicManagement.Domain.Entities.Patient ClinicManagement.Domain.Entities.Feedback::get_Patient()
+DA:152,0
+FN:152,ClinicManagement.Domain.Entities.Doctor ClinicManagement.Domain.Entities.Feedback::get_Doctor()
+FNDA:0,ClinicManagement.Domain.Entities.Doctor ClinicManagement.Domain.Entities.Feedback::get_Doctor()
+DA:153,0
+FN:160,System.Int32 ClinicManagement.Domain.Entities.Staff::get_StaffID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Staff::get_StaffID()
+DA:161,0
+FN:161,System.String ClinicManagement.Domain.Entities.Staff::get_Name()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Staff::get_Name()
+DA:162,0
+FN:162,System.String ClinicManagement.Domain.Entities.Staff::get_Phone()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Staff::get_Phone()
+DA:163,0
+FN:163,System.String ClinicManagement.Domain.Entities.Staff::get_Address()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Staff::get_Address()
+DA:164,0
+FN:164,System.DateTime ClinicManagement.Domain.Entities.Staff::get_BirthDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Staff::get_BirthDate()
+DA:165,0
+FN:165,ClinicManagement.Domain.Enums.Gender ClinicManagement.Domain.Entities.Staff::get_Gender()
+FNDA:0,ClinicManagement.Domain.Enums.Gender ClinicManagement.Domain.Entities.Staff::get_Gender()
+DA:166,0
+FN:166,System.String ClinicManagement.Domain.Entities.Staff::get_Designation()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Staff::get_Designation()
+DA:167,0
+FN:167,System.String ClinicManagement.Domain.Entities.Staff::get_Qualification()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Staff::get_Qualification()
+DA:168,0
+FN:168,System.Decimal ClinicManagement.Domain.Entities.Staff::get_Salary()
+FNDA:0,System.Decimal ClinicManagement.Domain.Entities.Staff::get_Salary()
+DA:169,0
+FN:169,System.DateTime ClinicManagement.Domain.Entities.Staff::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Staff::get_CreatedDate()
+DA:170,0
+FN:170,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Staff::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Staff::get_ModifiedDate()
+DA:171,0
+FN:171,System.Boolean ClinicManagement.Domain.Entities.Staff::get_IsActive()
+FNDA:0,System.Boolean ClinicManagement.Domain.Entities.Staff::get_IsActive()
+DA:172,0
+FN:179,System.Int32 ClinicManagement.Domain.Entities.Admin::get_AdminID()
+FNDA:0,System.Int32 ClinicManagement.Domain.Entities.Admin::get_AdminID()
+DA:180,0
+FN:180,System.String ClinicManagement.Domain.Entities.Admin::get_Name()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Admin::get_Name()
+DA:181,0
+FN:181,System.String ClinicManagement.Domain.Entities.Admin::get_Email()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Admin::get_Email()
+DA:182,0
+FN:182,System.String ClinicManagement.Domain.Entities.Admin::get_Password()
+FNDA:0,System.String ClinicManagement.Domain.Entities.Admin::get_Password()
+DA:183,0
+FN:183,System.DateTime ClinicManagement.Domain.Entities.Admin::get_CreatedDate()
+FNDA:0,System.DateTime ClinicManagement.Domain.Entities.Admin::get_CreatedDate()
+DA:184,0
+FN:184,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Admin::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> ClinicManagement.Domain.Entities.Admin::get_ModifiedDate()
+DA:185,0
+FN:185,System.Boolean ClinicManagement.Domain.Entities.Admin::get_IsActive()
+FNDA:0,System.Boolean ClinicManagement.Domain.Entities.Admin::get_IsActive()
+DA:186,0
+LF:107
+LH:0
+BRF:0
+BRH:0
+FNF:107
+FNH:0
+end_of_record

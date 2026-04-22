@@ -16,11 +16,22 @@ public static class ServiceCollectionExtensions
         this IServiceCollection services,
         IConfiguration configuration)
     {
-        // Register DbContext
+        // Register DbContext with PostgreSQL
         services.AddDbContext<ClinicDbContext>(options =>
-            options.UseSqlServer(
+        {
+            options.UseNpgsql(
                 configuration.GetConnectionString("DefaultConnection"),
-                b => b.MigrationsAssembly(typeof(ClinicDbContext).Assembly.FullName)));
+                npgsqlOptions =>
+                {
+                    npgsqlOptions.MigrationsAssembly(typeof(ClinicDbContext).Assembly.FullName);
+                    npgsqlOptions.EnableRetryOnFailure(
+                        maxRetryCount: 5,
+                        maxRetryDelay: TimeSpan.FromSeconds(30),
+                        errorCodesToAdd: null);
+                    npgsqlOptions.MigrationsHistoryTable("__ef_migrations_history", "public");
+                })
+                .UseSnakeCaseNamingConvention();
+        });
 
         // Register repositories
         services.AddScoped<IPatientRepository, PatientRepository>();

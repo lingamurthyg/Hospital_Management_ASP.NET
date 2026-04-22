@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="ce463cf9-fd52-4350-bfe8-86ef3d7203eb" name="@454e4feea4c1 2026-04-22 04:45:23" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-22T04:45:23.1853357+00:00" queuing="2026-04-22T04:45:23.1853358+00:00" start="2026-04-22T04:45:22.5730423+00:00" finish="2026-04-22T04:45:23.1910408+00:00" />
+  <TestSettings name="default" id="7686f1ad-5da2-4945-a34c-19fb17b41fcf">
+    <Deployment runDeploymentRoot="_454e4feea4c1_2026-04-22_04_45_23" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="1d092321-0b08-4a7a-8c65-d7a6246d971d" testId="b1bfa7b9-e2cc-60f5-8982-8b165d3cdeba" testName="ClinicManagement.UnitTests.SampleTest.Sample_Test_Should_Pass" computerName="454e4feea4c1" duration="00:00:00.0046679" startTime="2026-04-22T04:45:23.0933607+00:00" endTime="2026-04-22T04:45:23.0933792+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d092321-0b08-4a7a-8c65-d7a6246d971d" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ClinicManagement.UnitTests.SampleTest.Sample_Test_Should_Pass" storage="/modernize-data/studio-data/tnt1001/app319159/transformed-code/7/studio-workspace/backend services/code/tests/clinicmanagement.unittests/bin/debug/net8.0/clinicmanagement.unittests.dll" id="b1bfa7b9-e2cc-60f5-8982-8b165d3cdeba">
+      <Execution id="1d092321-0b08-4a7a-8c65-d7a6246d971d" />
+      <TestMethod codeBase="/modernize-data/studio-data/TNT1001/APP319159/transformed-code/7/studio-workspace/Backend Services/Code/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/ClinicManagement.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ClinicManagement.UnitTests.SampleTest" name="Sample_Test_Should_Pass" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="b1bfa7b9-e2cc-60f5-8982-8b165d3cdeba" executionId="1d092321-0b08-4a7a-8c65-d7a6246d971d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.6+bf9b858c26 (64-bit .NET 8.0.25)
+[xUnit.net 00:00:00.06]   Discovering: ClinicManagement.UnitTests
+[xUnit.net 00:00:00.08]   Discovered:  ClinicManagement.UnitTests
+[xUnit.net 00:00:00.08]   Starting:    ClinicManagement.UnitTests
+[xUnit.net 00:00:00.13]   Finished:    ClinicManagement.UnitTests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
