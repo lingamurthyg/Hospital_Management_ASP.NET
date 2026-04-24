@@ -1,0 +1,46 @@
+@page
+@model ClinicManagement.Web.Pages.Patients.DashboardModel
+@{
+    ViewData["Title"] = "Patient Dashboard";
+}
+
+<h2>Patient Dashboard</h2>
+
+<div class="row mt-4">
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Appointments</h5>
+                <p class="card-text display-4">@Model.AppointmentCount</p>
+                <a asp-page="/Patient/Appointments" class="btn btn-primary btn-sm">View All</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Book Appointment</h5>
+                <p class="card-text">Schedule a new appointment</p>
+                <a asp-page="/Patient/BookAppointment" class="btn btn-success btn-sm">Book Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">View Doctors</h5>
+                <p class="card-text">Browse available doctors</p>
+                <a asp-page="/Patient/Doctors" class="btn btn-info btn-sm">View Doctors</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Bills</h5>
+                <p class="card-text">View billing history</p>
+                <a asp-page="/Patient/Bills" class="btn btn-warning btn-sm">View Bills</a>
+            </div>
+        </div>
+    </div>
+</div>

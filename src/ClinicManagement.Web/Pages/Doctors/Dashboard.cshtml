@@ -1,0 +1,37 @@
+@page
+@model ClinicManagement.Web.Pages.Doctors.DashboardModel
+@{
+    ViewData["Title"] = "Doctor Dashboard";
+}
+
+<h2>Doctor Dashboard</h2>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Pending Appointments</h5>
+                <p class="card-text display-4">@Model.PendingAppointmentCount</p>
+                <a asp-page="/Doctor/PendingAppointments" class="btn btn-primary btn-sm">View All</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">All Appointments</h5>
+                <p class="card-text display-4">@Model.TotalAppointmentCount</p>
+                <a asp-page="/Doctor/Appointments" class="btn btn-info btn-sm">View All</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Patient History</h5>
+                <p class="card-text">View patient records</p>
+                <a asp-page="/Doctor/PatientHistory" class="btn btn-success btn-sm">View</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+@page
+@model ClinicManagement.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Clinic Management System</h1>
+    <p class="lead">Manage your clinic operations efficiently</p>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">For Patients</h5>
+                    <p class="card-text">Book appointments, view treatment history, and manage your health records.</p>
+                    <a asp-page="/Account/Login" class="btn btn-primary">Patient Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">For Doctors</h5>
+                    <p class="card-text">Manage appointments, update patient records, and track treatments.</p>
+                    <a asp-page="/Account/Login" class="btn btn-primary">Doctor Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">For Administrators</h5>
+                    <p class="card-text">Manage staff, doctors, and oversee clinic operations.</p>
+                    <a asp-page="/Account/Login" class="btn btn-primary">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
