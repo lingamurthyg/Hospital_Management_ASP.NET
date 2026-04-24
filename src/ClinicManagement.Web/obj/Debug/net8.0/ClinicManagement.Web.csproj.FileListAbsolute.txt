@@ -246,3 +246,5 @@
 /modernize-data/studio-data/TNT1001/APP1159/transformed-code/84/studio-workspace/FullApp/src/ClinicManagement.Web/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 /modernize-data/studio-data/TNT1001/APP1159/transformed-code/84/studio-workspace/FullApp/src/ClinicManagement.Web/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 /modernize-data/studio-data/TNT1001/APP1159/transformed-code/84/studio-workspace/FullApp/src/ClinicManagement.Web/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/modernize-data/studio-data/TNT1001/APP1159/transformed-code/84/studio-workspace/FullApp/src/ClinicManagement.Web/bin/Debug/net8.0/ClinicManagement.Application.deps.json
+/modernize-data/studio-data/TNT1001/APP1159/transformed-code/84/studio-workspace/FullApp/src/ClinicManagement.Web/bin/Debug/net8.0/ClinicManagement.Application.runtimeconfig.json
