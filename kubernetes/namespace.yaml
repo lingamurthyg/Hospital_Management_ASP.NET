@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: clinic-management-system
+  labels:
+    name: clinic-management-system
+    environment: production

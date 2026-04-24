@@ -1,0 +1,46 @@
+# Build artifacts
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Others
+*.log
+*.cache
+*.dll
+*.pdb
+*.exe
+.git/
+.gitignore
+.gitattributes
+README.md
+*.md
+.DS_Store
+Thumbs.db
+
+# Database files
+*.mdf
+*.ldf
+*.bak
+Database Files/
+
+# Documentation
+images/
+*.pdf

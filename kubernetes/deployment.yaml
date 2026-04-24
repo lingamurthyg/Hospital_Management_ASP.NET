@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clinic-management-system
+  namespace: clinic-management-system
+  labels:
+    app: clinic-management-system
+    version: v1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: clinic-management-system
+  template:
+    metadata:
+      labels:
+        app: clinic-management-system
+        version: v1
+    spec:
+      containers:
+      - name: clinic-management-system
+        image: {{IMAGE_URI}}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          protocol: TCP
+          name: http
+        env:
+        - name: ASPNET_ENVIRONMENT
+          value: "Production"
+        - name: DB_HOST
+          value: "{{DB_HOST}}"
+        - name: DB_NAME
+          value: "{{DB_NAME}}"
+        - name: DB_USER
+          value: "{{DB_USER}}"
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: clinic-db-secret
+              key: password
+              optional: true
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "1000m"
+            memory: "2Gi"
+        livenessProbe:
+          httpGet:
+            path: /SignUp.aspx
+            port: 80
+            scheme: HTTP
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          timeoutSeconds: 5
+          successThreshold: 1
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /SignUp.aspx
+            port: 80
+            scheme: HTTP
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          successThreshold: 1
+          failureThreshold: 3
+      nodeSelector:
+        kubernetes.io/os: windows
+      tolerations:
+      - key: "os"
+        operator: "Equal"
+        value: "windows"
+        effect: "NoSchedule"

@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  clinic-management-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: clinic-management-system:latest
+    container_name: clinic-management-system
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNET_ENVIRONMENT=Production
+      - DB_CONNECTION_STRING=Data Source=${DB_HOST};Initial Catalog=${DB_NAME};User ID=${DB_USER};Password=${DB_PASSWORD}
+    networks:
+      - app-network
+    restart: unless-stopped
+
+networks:
+  app-network:
+    driver: bridge
