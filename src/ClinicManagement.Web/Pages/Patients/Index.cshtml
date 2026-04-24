@@ -1,0 +1,59 @@
+@page
+@model ClinicManagement.Web.Pages.Patients.IndexModel
+@{
+    ViewData["Title"] = "Patients";
+}
+
+<h1>Patients</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Create New Patient</a>
+</p>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="text" name="searchString" value="@Model.SearchString" class="form-control" placeholder="Search patients..." />
+            <button type="submit" class="btn btn-secondary">Search</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Patients != null && Model.Patients.Any())
+        {
+            @foreach (var patient in Model.Patients)
+            {
+                <tr>
+                    <td>@patient.PatientID</td>
+                    <td>@patient.Name</td>
+                    <td>@patient.Phone</td>
+                    <td>@patient.Email</td>
+                    <td>@patient.Gender</td>
+                    <td>
+                        <a asp-page="Details" asp-route-id="@patient.PatientID" class="btn btn-sm btn-info">Details</a>
+                        <a asp-page="Edit" asp-route-id="@patient.PatientID" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-page="Delete" asp-route-id="@patient.PatientID" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center">No patients found</td>
+            </tr>
+        }
+    </tbody>
+</table>

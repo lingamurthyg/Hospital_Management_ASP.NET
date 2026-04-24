@@ -1,0 +1,59 @@
+@page
+@model ClinicManagement.Web.Pages.Doctors.IndexModel
+@{
+    ViewData["Title"] = "Doctors";
+}
+
+<h1>Doctors</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Add New Doctor</a>
+</p>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="text" name="searchString" value="@Model.SearchString" class="form-control" placeholder="Search doctors..." />
+            <button type="submit" class="btn btn-secondary">Search</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Specialization</th>
+            <th>Phone</th>
+            <th>Charges</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Doctors != null && Model.Doctors.Any())
+        {
+            @foreach (var doctor in Model.Doctors)
+            {
+                <tr>
+                    <td>@doctor.DoctorID</td>
+                    <td>@doctor.Name</td>
+                    <td>@doctor.Specialization</td>
+                    <td>@doctor.Phone</td>
+                    <td>@doctor.ChargesPerVisit.ToString("C")</td>
+                    <td>
+                        <a asp-page="Details" asp-route-id="@doctor.DoctorID" class="btn btn-sm btn-info">Details</a>
+                        <a asp-page="Edit" asp-route-id="@doctor.DoctorID" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-page="Delete" asp-route-id="@doctor.DoctorID" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center">No doctors found</td>
+            </tr>
+        }
+    </tbody>
+</table>

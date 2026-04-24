@@ -1,0 +1,52 @@
+@page
+@model ClinicManagement.Web.Pages.Appointments.IndexModel
+@{
+    ViewData["Title"] = "Appointments";
+}
+
+<h1>Appointments</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Schedule New Appointment</a>
+</p>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Amount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Appointments != null && Model.Appointments.Any())
+        {
+            @foreach (var appointment in Model.Appointments)
+            {
+                <tr>
+                    <td>@appointment.AppointmentID</td>
+                    <td>@appointment.Patient?.Name</td>
+                    <td>@appointment.Doctor?.Name</td>
+                    <td>@appointment.AppointmentDate.ToShortDateString()</td>
+                    <td>@appointment.Status</td>
+                    <td>@(appointment.Amount?.ToString("C") ?? "N/A")</td>
+                    <td>
+                        <a asp-page="Details" asp-route-id="@appointment.AppointmentID" class="btn btn-sm btn-info">Details</a>
+                        <a asp-page="Edit" asp-route-id="@appointment.AppointmentID" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-page="Delete" asp-route-id="@appointment.AppointmentID" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7" class="text-center">No appointments found</td>
+            </tr>
+        }
+    </tbody>
+</table>
