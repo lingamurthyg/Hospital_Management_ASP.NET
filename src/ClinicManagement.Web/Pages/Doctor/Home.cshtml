@@ -1,0 +1,38 @@
+@page
+@model ClinicManagement.Web.Pages.Doctor.HomeModel
+@{
+    ViewData["Title"] = "Doctor Home";
+}
+
+<div class="container">
+    <h2>Welcome, Dr. @Model.DoctorName</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pending Appointments</h5>
+                    <p class="card-text">View pending appointment requests</p>
+                    <a asp-page="/Doctor/PendingAppointments" class="btn btn-primary">View Pending</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">My Schedule</h5>
+                    <p class="card-text">View your appointment schedule</p>
+                    <a asp-page="/Doctor/Schedule" class="btn btn-primary">View Schedule</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Patient History</h5>
+                    <p class="card-text">View patient medical histories</p>
+                    <a asp-page="/Doctor/PatientHistory" class="btn btn-primary">View History</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

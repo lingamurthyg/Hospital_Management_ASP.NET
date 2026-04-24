@@ -1,0 +1,38 @@
+@page
+@model ClinicManagement.Web.Pages.Admin.HomeModel
+@{
+    ViewData["Title"] = "Admin Home";
+}
+
+<div class="container">
+    <h2>Admin Dashboard</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Doctors</h5>
+                    <p class="card-text">Add, edit, or remove doctors</p>
+                    <a asp-page="/Admin/Doctors" class="btn btn-primary">Manage Doctors</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Staff</h5>
+                    <p class="card-text">Manage clinic staff members</p>
+                    <a asp-page="/Admin/Staff" class="btn btn-primary">Manage Staff</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">View Reports</h5>
+                    <p class="card-text">View clinic statistics and reports</p>
+                    <a asp-page="/Admin/Reports" class="btn btn-primary">View Reports</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
