@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  caretracker-app:
+    image: caretracker-application:latest
+    container_name: caretracker-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNET_ENVIRONMENT=Production
+      - DB_HOST=${DB_HOST:-sqlserver}
+      - DB_USER=${DB_USER:-sa}
+      - DB_PASSWORD=${DB_PASSWORD:-YourStrong@Passw0rd}
+      - DB_CONNECTION_STRING=Data Source=${DB_HOST:-sqlserver};Initial Catalog=DBProject;User ID=${DB_USER:-sa};Password=${DB_PASSWORD:-YourStrong@Passw0rd};TrustServerCertificate=True;
+    volumes:
+      - app-logs:C:\inetpub\logs
+      - app-data:C:\app\App_Data
+    networks:
+      - caretracker-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "powershell", "-Command", "try { $response = Invoke-WebRequest -Uri http://localhost/SignUp.aspx -UseBasicParsing -TimeoutSec 5; if ($response.StatusCode -eq 200) { exit 0 } else { exit 1 } } catch { exit 1 }"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+volumes:
+  app-logs:
+    driver: local
+  app-data:
+    driver: local
+
+networks:
+  caretracker-network:
+    driver: nat

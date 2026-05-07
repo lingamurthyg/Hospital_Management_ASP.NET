@@ -1,0 +1,68 @@
+# Build artifacts
+Code/DBProject/bin/
+Code/DBProject/obj/
+Code/**/bin/
+Code/**/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+Code/packages/
+*.nupkg
+*.snupkg
+
+# Application Insights
+Code/DBProject/ApplicationInsights.config
+
+# Database files
+*.mdf
+*.ldf
+*.ndf
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+README*
+LICENSE*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Test results
+TestResults/
+
+# Database files
+Database Files/
+
+# Scripts
+scripts/
+ecs/
+docs/
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
