@@ -14,14 +14,24 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
-        // Register DbContext
+        // Register DbContext with PostgreSQL
         services.AddDbContext<ClinicDbContext>(options =>
-            options.UseSqlServer(
+        {
+            options.UseNpgsql(
                 configuration.GetConnectionString("DefaultConnection"),
-                sqlOptions => sqlOptions.EnableRetryOnFailure(
-                    maxRetryCount: 5,
-                    maxRetryDelay: TimeSpan.FromSeconds(30),
-                    errorNumbersToAdd: null)));
+                npgsqlOptions =>
+                {
+                    npgsqlOptions.EnableRetryOnFailure(
+                        maxRetryCount: 5,
+                        maxRetryDelay: TimeSpan.FromSeconds(30),
+                        errorCodesToAdd: null);
+                    npgsqlOptions.MigrationsHistoryTable("__efmigrations_history", "public");
+                })
+                .UseSnakeCaseNamingConvention(); // Apply snake_case naming convention for PostgreSQL
+            
+            // Enable legacy timestamp behavior for PostgreSQL
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+        });
 
         // Register repositories
         services.AddScoped<IPatientRepository, PatientRepository>();

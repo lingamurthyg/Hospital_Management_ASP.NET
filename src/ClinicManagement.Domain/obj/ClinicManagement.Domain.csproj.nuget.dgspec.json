@@ -14,6 +14,7 @@
         "outputPath": "/modernize-data/studio-data/TNT1001/APP837891/transformed-code/57/studio-workspace/FullComp/src/ClinicManagement.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "/modernize-data/studio-data/TNT1001/APP837891/transformed-code/57/studio-workspace/FullComp/nuget.config",
           "/app/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [

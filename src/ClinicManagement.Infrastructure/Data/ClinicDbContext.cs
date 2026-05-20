@@ -26,10 +26,13 @@ public class ClinicDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
+        // Set default schema to public for PostgreSQL
+        modelBuilder.HasDefaultSchema("public");
+
         // Apply all configurations from the assembly
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ClinicDbContext).Assembly);
 
-        // Additional configurations if needed
+        // Patient entity configuration
         modelBuilder.Entity<Patient>(entity =>
         {
             entity.HasKey(e => e.PatientID);
@@ -38,19 +41,30 @@ public class ClinicDbContext : DbContext
             entity.Property(e => e.Phone).HasMaxLength(20);
             entity.Property(e => e.Address).HasMaxLength(200);
             entity.Property(e => e.Gender).HasMaxLength(10);
+            entity.Property(e => e.Password).IsRequired().HasMaxLength(255);
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.BirthDate).HasColumnType("timestamp without time zone");
             entity.HasIndex(e => e.Email).IsUnique();
         });
 
+        // Doctor entity configuration
         modelBuilder.Entity<Doctor>(entity =>
         {
             entity.HasKey(e => e.DoctorID);
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
             entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
+            entity.Property(e => e.Password).IsRequired().HasMaxLength(255);
             entity.Property(e => e.Phone).HasMaxLength(20);
             entity.Property(e => e.Address).HasMaxLength(200);
             entity.Property(e => e.Gender).HasMaxLength(10);
             entity.Property(e => e.Specialization).HasMaxLength(100);
             entity.Property(e => e.Qualification).HasMaxLength(200);
+            entity.Property(e => e.Salary).HasColumnType("numeric(18,2)");
+            entity.Property(e => e.ChargesPerVisit).HasColumnType("numeric(18,2)");
+            entity.Property(e => e.BirthDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
             entity.HasIndex(e => e.Email).IsUnique();
             entity.HasOne(d => d.Department)
                 .WithMany(p => p.Doctors)
@@ -58,13 +72,17 @@ public class ClinicDbContext : DbContext
                 .OnDelete(DeleteBehavior.Restrict);
         });
 
+        // Department entity configuration
         modelBuilder.Entity<Department>(entity =>
         {
             entity.HasKey(e => e.DeptNo);
             entity.Property(e => e.DeptName).IsRequired().HasMaxLength(100);
             entity.Property(e => e.Description).HasMaxLength(500);
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
         });
 
+        // Appointment entity configuration
         modelBuilder.Entity<Appointment>(entity =>
         {
             entity.HasKey(e => e.AppointmentID);
@@ -72,6 +90,9 @@ public class ClinicDbContext : DbContext
             entity.Property(e => e.Disease).HasMaxLength(200);
             entity.Property(e => e.Progress).HasMaxLength(500);
             entity.Property(e => e.Prescription).HasMaxLength(1000);
+            entity.Property(e => e.AppointmentDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
             
             entity.HasOne(d => d.Patient)
                 .WithMany(p => p.Appointments)
@@ -89,10 +110,13 @@ public class ClinicDbContext : DbContext
                 .OnDelete(DeleteBehavior.Restrict);
         });
 
+        // TimeSlot entity configuration
         modelBuilder.Entity<TimeSlot>(entity =>
         {
             entity.HasKey(e => e.TimeSlotID);
             entity.Property(e => e.Timings).IsRequired().HasMaxLength(50);
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
             
             entity.HasOne(d => d.Doctor)
                 .WithMany(p => p.TimeSlots)
@@ -100,10 +124,15 @@ public class ClinicDbContext : DbContext
                 .OnDelete(DeleteBehavior.Cascade);
         });
 
+        // Bill entity configuration
         modelBuilder.Entity<Bill>(entity =>
         {
             entity.HasKey(e => e.BillID);
-            entity.Property(e => e.Amount).HasColumnType("decimal(18,2)");
+            entity.Property(e => e.Amount).HasColumnType("numeric(18,2)");
+            entity.Property(e => e.BillDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.PaidDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
             
             entity.HasOne(d => d.Appointment)
                 .WithOne(p => p.Bill)
@@ -116,12 +145,16 @@ public class ClinicDbContext : DbContext
                 .OnDelete(DeleteBehavior.Restrict);
         });
 
+        // TreatmentHistory entity configuration
         modelBuilder.Entity<TreatmentHistory>(entity =>
         {
             entity.HasKey(e => e.TreatmentID);
             entity.Property(e => e.Disease).IsRequired().HasMaxLength(200);
             entity.Property(e => e.Treatment).HasMaxLength(500);
             entity.Property(e => e.Prescription).HasMaxLength(1000);
+            entity.Property(e => e.TreatmentDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
             
             entity.HasOne(d => d.Patient)
                 .WithMany(p => p.TreatmentHistories)
@@ -129,6 +162,7 @@ public class ClinicDbContext : DbContext
                 .OnDelete(DeleteBehavior.Restrict);
         });
 
+        // OtherStaff entity configuration
         modelBuilder.Entity<OtherStaff>(entity =>
         {
             entity.HasKey(e => e.StaffID);
@@ -138,14 +172,21 @@ public class ClinicDbContext : DbContext
             entity.Property(e => e.Designation).HasMaxLength(100);
             entity.Property(e => e.Address).HasMaxLength(200);
             entity.Property(e => e.Qualification).HasMaxLength(200);
-            entity.Property(e => e.Salary).HasColumnType("decimal(18,2)");
+            entity.Property(e => e.Salary).HasColumnType("numeric(18,2)");
+            entity.Property(e => e.BirthDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
         });
 
+        // Admin entity configuration
         modelBuilder.Entity<Admin>(entity =>
         {
             entity.HasKey(e => e.AdminID);
             entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
+            entity.Property(e => e.Password).IsRequired().HasMaxLength(255);
             entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
             entity.HasIndex(e => e.Email).IsUnique();
         });
     }

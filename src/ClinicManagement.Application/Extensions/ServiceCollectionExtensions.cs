@@ -1,6 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
 using AutoMapper;
-using AutoMapper.Extensions.DependencyInjection;
 
 namespace ClinicManagement.Application.Extensions;
 
