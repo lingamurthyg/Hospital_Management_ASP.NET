@@ -1,0 +1,40 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Clinic Management System</h1>
+    <p>Manage your clinic efficiently with our comprehensive system.</p>
+    
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Patient Portal</h5>
+                    <p class="card-text">Book appointments, view treatment history, and manage your health records.</p>
+                    <a asp-page="/Patient/Login" class="btn btn-primary">Patient Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Doctor Portal</h5>
+                    <p class="card-text">Manage appointments, update patient records, and view schedules.</p>
+                    <a asp-page="/Doctor/Login" class="btn btn-success">Doctor Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Admin Portal</h5>
+                    <p class="card-text">Manage doctors, staff, departments, and clinic operations.</p>
+                    <a asp-page="/Admin/Login" class="btn btn-danger">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
