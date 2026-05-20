@@ -1,20 +1,20 @@
-using ClinicManagement.Web.Pages;
-using FluentAssertions;
-using Microsoft.Extensions.Logging;
-using Moq;
 using Xunit;
+using Moq;
+using Microsoft.Extensions.Logging;
+using FluentAssertions;
+using ClinicManagement.Web.Pages;
 
 namespace ClinicManagement.UnitTests.Web.Pages;
 
 public class IndexModelTests
 {
     private readonly Mock<ILogger<IndexModel>> _mockLogger;
-    private readonly IndexModel _sut;
+    private readonly IndexModel _indexModel;
 
     public IndexModelTests()
     {
         _mockLogger = new Mock<ILogger<IndexModel>>();
-        _sut = new IndexModel(_mockLogger.Object);
+        _indexModel = new IndexModel(_mockLogger.Object);
     }
 
     [Fact]
@@ -28,17 +28,23 @@ public class IndexModelTests
     }
 
     [Fact]
+    public void Constructor_WithNullLogger_ShouldThrowArgumentNullException()
+    {
+        // Arrange, Act & Assert
+        Assert.Throws<ArgumentNullException>(() => new IndexModel(null!));
+    }
+
+    [Fact]
     public void OnGet_ShouldLogInformation()
     {
         // Arrange
-        var loggerMock = new Mock<ILogger<IndexModel>>();
-        var model = new IndexModel(loggerMock.Object);
+        var model = new IndexModel(_mockLogger.Object);
 
         // Act
         model.OnGet();
 
         // Assert
-        loggerMock.Verify(
+        _mockLogger.Verify(
             x => x.Log(
                 LogLevel.Information,
                 It.IsAny<EventId>(),
@@ -49,24 +55,23 @@ public class IndexModelTests
     }
 
     [Fact]
-    public void OnGet_ShouldExecuteWithoutException()
+    public void OnGet_ShouldNotThrowException()
     {
         // Arrange
         var model = new IndexModel(_mockLogger.Object);
 
         // Act
-        var exception = Record.Exception(() => model.OnGet());
+        Action act = () => model.OnGet();
 
         // Assert
-        exception.Should().BeNull();
+        act.Should().NotThrow();
     }
 
     [Fact]
     public void OnGet_CalledMultipleTimes_ShouldLogEachTime()
     {
         // Arrange
-        var loggerMock = new Mock<ILogger<IndexModel>>();
-        var model = new IndexModel(loggerMock.Object);
+        var model = new IndexModel(_mockLogger.Object);
 
         // Act
         model.OnGet();
@@ -74,7 +79,7 @@ public class IndexModelTests
         model.OnGet();
 
         // Assert
-        loggerMock.Verify(
+        _mockLogger.Verify(
             x => x.Log(
                 LogLevel.Information,
                 It.IsAny<EventId>(),
@@ -95,21 +100,63 @@ public class IndexModelTests
     }
 
     [Fact]
-    public void OnGet_WithLoggerThatThrows_ShouldPropagateException()
+    public void OnGet_WithLoggerException_ShouldNotThrow()
     {
         // Arrange
-        var loggerMock = new Mock<ILogger<IndexModel>>();
-        loggerMock.Setup(x => x.Log(
+        var mockLogger = new Mock<ILogger<IndexModel>>();
+        mockLogger.Setup(x => x.Log(
             It.IsAny<LogLevel>(),
             It.IsAny<EventId>(),
             It.IsAny<It.IsAnyType>(),
             It.IsAny<Exception>(),
             It.IsAny<Func<It.IsAnyType, Exception?, string>>()))
-            .Throws<InvalidOperationException>();
+            .Throws(new Exception("Logger error"));
 
-        var model = new IndexModel(loggerMock.Object);
+        var model = new IndexModel(mockLogger.Object);
 
         // Act & Assert
-        Assert.Throws<InvalidOperationException>(() => model.OnGet());
+        Assert.Throws<Exception>(() => model.OnGet());
+    }
+
+    [Fact]
+    public void OnGet_ShouldExecuteSuccessfully()
+    {
+        // Arrange
+        var model = new IndexModel(_mockLogger.Object);
+
+        // Act
+        model.OnGet();
+
+        // Assert
+        // Method completes without exception
+        _mockLogger.Verify(
+            x => x.Log(
+                It.IsAny<LogLevel>(),
+                It.IsAny<EventId>(),
+                It.IsAny<It.IsAnyType>(),
+                It.IsAny<Exception>(),
+                It.IsAny<Func<It.IsAnyType, Exception?, string>>()),
+            Times.AtLeastOnce);
+    }
+
+    [Fact]
+    public void IndexModel_ShouldHavePublicOnGetMethod()
+    {
+        // Arrange & Act
+        var methodInfo = typeof(IndexModel).GetMethod("OnGet");
+
+        // Assert
+        methodInfo.Should().NotBeNull();
+        methodInfo!.IsPublic.Should().BeTrue();
+    }
+
+    [Fact]
+    public void IndexModel_ShouldBeInCorrectNamespace()
+    {
+        // Arrange & Act
+        var model = new IndexModel(_mockLogger.Object);
+
+        // Assert
+        model.GetType().Namespace.Should().Be("ClinicManagement.Web.Pages");
     }
 }

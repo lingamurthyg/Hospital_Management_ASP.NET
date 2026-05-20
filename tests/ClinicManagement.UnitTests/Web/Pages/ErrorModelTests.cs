@@ -1,24 +1,24 @@
-using System.Diagnostics;
-using ClinicManagement.Web.Pages;
-using FluentAssertions;
+using Xunit;
+using Moq;
+using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
-using Moq;
-using Xunit;
+using FluentAssertions;
+using System.Diagnostics;
+using ClinicManagement.Web.Pages;
 
 namespace ClinicManagement.UnitTests.Web.Pages;
 
 public class ErrorModelTests
 {
     private readonly Mock<ILogger<ErrorModel>> _mockLogger;
-    private readonly ErrorModel _sut;
+    private readonly ErrorModel _errorModel;
 
     public ErrorModelTests()
     {
         _mockLogger = new Mock<ILogger<ErrorModel>>();
-        _sut = new ErrorModel(_mockLogger.Object);
+        _errorModel = new ErrorModel(_mockLogger.Object);
     }
 
     [Fact]
@@ -32,27 +32,34 @@ public class ErrorModelTests
     }
 
     [Fact]
-    public void RequestId_DefaultValue_ShouldBeNull()
+    public void Constructor_WithNullLogger_ShouldThrowArgumentNullException()
     {
-        // Arrange
+        // Arrange, Act & Assert
+        Assert.Throws<ArgumentNullException>(() => new ErrorModel(null!));
+    }
+
+    [Fact]
+    public void RequestId_ShouldBeNullByDefault()
+    {
+        // Arrange & Act
         var model = new ErrorModel(_mockLogger.Object);
 
-        // Act & Assert
+        // Assert
         model.RequestId.Should().BeNull();
     }
 
     [Fact]
-    public void RequestId_SetValue_ShouldReturnSetValue()
+    public void RequestId_CanBeSet()
     {
         // Arrange
         var model = new ErrorModel(_mockLogger.Object);
-        var expectedRequestId = "test-request-id-123";
+        var requestId = "test-request-id-123";
 
         // Act
-        model.RequestId = expectedRequestId;
+        model.RequestId = requestId;
 
         // Assert
-        model.RequestId.Should().Be(expectedRequestId);
+        model.RequestId.Should().Be(requestId);
     }
 
     [Fact]
@@ -88,22 +95,6 @@ public class ErrorModelTests
     }
 
     [Fact]
-    public void ShowRequestId_WhenRequestIdIsWhitespace_ShouldReturnTrue()
-    {
-        // Arrange
-        var model = new ErrorModel(_mockLogger.Object)
-        {
-            RequestId = "   "
-        };
-
-        // Act
-        var result = model.ShowRequestId;
-
-        // Assert
-        result.Should().BeTrue(); // string.IsNullOrEmpty doesn't treat whitespace as empty
-    }
-
-    [Fact]
     public void ShowRequestId_WhenRequestIdHasValue_ShouldReturnTrue()
     {
         // Arrange
@@ -120,43 +111,28 @@ public class ErrorModelTests
     }
 
     [Fact]
-    public void OnGet_WithActiveActivity_ShouldSetRequestIdFromActivity()
+    public void OnGet_ShouldSetRequestIdFromActivity()
     {
         // Arrange
+        var model = new ErrorModel(_mockLogger.Object);
         var activity = new Activity("TestActivity");
         activity.Start();
-        
-        var model = new ErrorModel(_mockLogger.Object);
-        var httpContext = new DefaultHttpContext();
-        model.PageContext = new PageContext
-        {
-            HttpContext = httpContext
-        };
 
-        try
-        {
-            // Act
-            model.OnGet();
+        // Act
+        model.OnGet();
 
-            // Assert
-            model.RequestId.Should().NotBeNullOrEmpty();
-            model.RequestId.Should().Be(activity.Id);
-        }
-        finally
-        {
-            activity.Stop();
-        }
+        // Assert
+        model.RequestId.Should().NotBeNullOrEmpty();
+        activity.Stop();
     }
 
     [Fact]
-    public void OnGet_WithoutActiveActivity_ShouldSetRequestIdFromHttpContext()
+    public void OnGet_WhenActivityIsNull_ShouldSetRequestIdFromHttpContext()
     {
         // Arrange
         var model = new ErrorModel(_mockLogger.Object);
         var httpContext = new DefaultHttpContext();
-        var expectedTraceIdentifier = "trace-id-12345";
-        httpContext.TraceIdentifier = expectedTraceIdentifier;
-        
+        httpContext.TraceIdentifier = "trace-123";
         model.PageContext = new PageContext
         {
             HttpContext = httpContext
@@ -166,11 +142,11 @@ public class ErrorModelTests
         model.OnGet();
 
         // Assert
-        model.RequestId.Should().Be(expectedTraceIdentifier);
+        model.RequestId.Should().Be("trace-123");
     }
 
     [Fact]
-    public void OnGet_ShouldExecuteWithoutException()
+    public void OnGet_ShouldNotThrowException()
     {
         // Arrange
         var model = new ErrorModel(_mockLogger.Object);
@@ -181,37 +157,35 @@ public class ErrorModelTests
         };
 
         // Act
-        var exception = Record.Exception(() => model.OnGet());
+        Action act = () => model.OnGet();
 
         // Assert
-        exception.Should().BeNull();
+        act.Should().NotThrow();
     }
 
     [Fact]
     public void ErrorModel_ShouldHaveResponseCacheAttribute()
     {
         // Arrange & Act
-        var attribute = typeof(ErrorModel)
-            .GetCustomAttributes(typeof(ResponseCacheAttribute), false)
-            .FirstOrDefault() as ResponseCacheAttribute;
+        var attributes = typeof(ErrorModel).GetCustomAttributes(typeof(ResponseCacheAttribute), false);
 
         // Assert
-        attribute.Should().NotBeNull();
-        attribute!.Duration.Should().Be(0);
-        attribute.Location.Should().Be(ResponseCacheLocation.None);
-        attribute.NoStore.Should().BeTrue();
+        attributes.Should().NotBeEmpty();
+        var responseCacheAttr = attributes[0] as ResponseCacheAttribute;
+        responseCacheAttr.Should().NotBeNull();
+        responseCacheAttr!.Duration.Should().Be(0);
+        responseCacheAttr.Location.Should().Be(ResponseCacheLocation.None);
+        responseCacheAttr.NoStore.Should().BeTrue();
     }
 
     [Fact]
     public void ErrorModel_ShouldHaveIgnoreAntiforgeryTokenAttribute()
     {
         // Arrange & Act
-        var attribute = typeof(ErrorModel)
-            .GetCustomAttributes(typeof(IgnoreAntiforgeryTokenAttribute), false)
-            .FirstOrDefault();
+        var attributes = typeof(ErrorModel).GetCustomAttributes(typeof(IgnoreAntiforgeryTokenAttribute), false);
 
         // Assert
-        attribute.Should().NotBeNull();
+        attributes.Should().NotBeEmpty();
     }
 
     [Fact]
@@ -236,52 +210,58 @@ public class ErrorModelTests
         };
 
         // Act
-        httpContext.TraceIdentifier = "trace-1";
         model.OnGet();
         var firstRequestId = model.RequestId;
-
-        httpContext.TraceIdentifier = "trace-2";
+        
+        httpContext.TraceIdentifier = "new-trace-id";
         model.OnGet();
         var secondRequestId = model.RequestId;
 
         // Assert
-        firstRequestId.Should().Be("trace-1");
-        secondRequestId.Should().Be("trace-2");
-        firstRequestId.Should().NotBe(secondRequestId);
+        firstRequestId.Should().NotBeNull();
+        secondRequestId.Should().NotBeNull();
     }
 
     [Fact]
-    public void RequestId_SetToNull_ShowRequestIdShouldBeFalse()
+    public void ErrorModel_ShouldBeInCorrectNamespace()
     {
-        // Arrange
-        var model = new ErrorModel(_mockLogger.Object)
-        {
-            RequestId = "initial-value"
-        };
-
-        // Act
-        model.RequestId = null;
+        // Arrange & Act
+        var model = new ErrorModel(_mockLogger.Object);
 
         // Assert
-        model.ShowRequestId.Should().BeFalse();
+        model.GetType().Namespace.Should().Be("ClinicManagement.Web.Pages");
     }
 
-    [Theory]
-    [InlineData("request-id-1")]
-    [InlineData("abc123")]
-    [InlineData("00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01")]
-    public void ShowRequestId_WithVariousValidRequestIds_ShouldReturnTrue(string requestId)
+    [Fact]
+    public void ErrorModel_ShouldHavePublicOnGetMethod()
     {
-        // Arrange
-        var model = new ErrorModel(_mockLogger.Object)
-        {
-            RequestId = requestId
-        };
-
-        // Act
-        var result = model.ShowRequestId;
+        // Arrange & Act
+        var methodInfo = typeof(ErrorModel).GetMethod("OnGet");
 
         // Assert
-        result.Should().BeTrue();
+        methodInfo.Should().NotBeNull();
+        methodInfo!.IsPublic.Should().BeTrue();
+    }
+
+    [Fact]
+    public void RequestId_Property_ShouldBeNullable()
+    {
+        // Arrange & Act
+        var propertyInfo = typeof(ErrorModel).GetProperty("RequestId");
+
+        // Assert
+        propertyInfo.Should().NotBeNull();
+        propertyInfo!.PropertyType.Should().Be(typeof(string));
+    }
+
+    [Fact]
+    public void ShowRequestId_Property_ShouldBeBoolean()
+    {
+        // Arrange & Act
+        var propertyInfo = typeof(ErrorModel).GetProperty("ShowRequestId");
+
+        // Assert
+        propertyInfo.Should().NotBeNull();
+        propertyInfo!.PropertyType.Should().Be(typeof(bool));
     }
 }

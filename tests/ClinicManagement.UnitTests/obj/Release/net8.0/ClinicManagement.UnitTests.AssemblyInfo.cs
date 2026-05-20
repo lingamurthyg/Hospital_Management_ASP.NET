@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClinicManagement.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b3ddb7f50270823f54f24fc3f573a068e165d55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e95a297c3f1cae52a59a5fa0eec70250795394fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClinicManagement.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClinicManagement.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

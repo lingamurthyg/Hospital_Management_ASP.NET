@@ -1541,3 +1541,205 @@
 2026-05-20 13:05:31.301 +00:00 [INF] Executed page /Index in 1.0929ms
 2026-05-20 13:05:31.301 +00:00 [INF] Executed endpoint '/Index'
 2026-05-20 13:05:31.301 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 1.9124ms
+2026-05-20 14:11:49.303 +00:00 [INF] User profile is available. Using '/app/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-20 14:11:49.344 +00:00 [INF] Starting Clinic Management System
+2026-05-20 14:11:49.380 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:11:49.386 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-20 14:11:49.397 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:11:49.408 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:11:49.413 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:11:49.414 +00:00 [INF] Home page accessed
+2026-05-20 14:11:49.414 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:11:49.416 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:11:49.416 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:11:49.459 +00:00 [INF] Executed page /Index in 49.3111ms
+2026-05-20 14:11:49.462 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:11:49.465 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 85.9014ms
+2026-05-20 14:11:49.471 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:11:49.472 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:11:49.472 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:11:49.472 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:11:49.472 +00:00 [INF] Home page accessed
+2026-05-20 14:11:49.472 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:11:49.472 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:11:49.472 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:11:49.475 +00:00 [INF] Executed page /Index in 2.9214ms
+2026-05-20 14:11:49.475 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:11:49.475 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 4.3546ms
+2026-05-20 14:11:49.476 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:11:49.477 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:11:49.477 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:11:49.477 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:11:49.477 +00:00 [INF] Home page accessed
+2026-05-20 14:11:49.477 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:11:49.477 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:11:49.477 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:11:49.478 +00:00 [INF] Executed page /Index in 1.1183ms
+2026-05-20 14:11:49.478 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:11:49.478 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 2.1897ms
+2026-05-20 14:11:49.479 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:11:49.479 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:11:49.479 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:11:49.479 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:11:49.480 +00:00 [INF] Home page accessed
+2026-05-20 14:11:49.480 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:11:49.480 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:11:49.480 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:11:49.480 +00:00 [INF] Executed page /Index in 0.6855ms
+2026-05-20 14:11:49.480 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:11:49.480 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 1.2226ms
+2026-05-20 14:11:49.481 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:11:49.482 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:11:49.482 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:11:49.482 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:11:49.482 +00:00 [INF] Home page accessed
+2026-05-20 14:11:49.482 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:11:49.482 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:11:49.482 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:11:49.482 +00:00 [INF] Executed page /Index in 0.5182ms
+2026-05-20 14:11:49.482 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:11:49.482 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 0.9363ms
+2026-05-20 14:11:49.483 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:11:49.483 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:11:49.483 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:11:49.484 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:11:49.484 +00:00 [INF] Home page accessed
+2026-05-20 14:11:49.484 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:11:49.484 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:11:49.484 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:11:49.484 +00:00 [INF] Executed page /Index in 0.4716ms
+2026-05-20 14:11:49.484 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:11:49.484 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 0.8487ms
+2026-05-20 14:11:49.485 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/Error - null null
+2026-05-20 14:11:49.486 +00:00 [INF] Executing endpoint '/Error'
+2026-05-20 14:11:49.488 +00:00 [INF] Route matched with {page = "/Error"}. Executing page /Error
+2026-05-20 14:11:49.488 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.ErrorModel.OnGet - ModelState is "Valid"
+2026-05-20 14:11:49.489 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:11:49.489 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:11:49.489 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:11:49.490 +00:00 [INF] Executed page /Error in 2.4809ms
+2026-05-20 14:11:49.490 +00:00 [INF] Executed endpoint '/Error'
+2026-05-20 14:11:49.491 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/Error - 200 null text/html; charset=utf-8 5.6818ms
+2026-05-20 14:11:49.492 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:11:49.492 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:11:49.492 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:11:49.492 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:11:49.492 +00:00 [INF] Home page accessed
+2026-05-20 14:11:49.492 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:11:49.492 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:11:49.492 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:11:49.493 +00:00 [INF] Executed page /Index in 0.675ms
+2026-05-20 14:11:49.493 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:11:49.493 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 1.1139ms
+2026-05-20 14:11:49.495 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:11:49.495 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:11:49.495 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:11:49.495 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:11:49.495 +00:00 [INF] Home page accessed
+2026-05-20 14:11:49.496 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:11:49.496 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:11:49.496 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:11:49.496 +00:00 [INF] Executed page /Index in 0.5792ms
+2026-05-20 14:11:49.496 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:11:49.496 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 1.0037ms
+2026-05-20 14:13:33.933 +00:00 [INF] User profile is available. Using '/app/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-20 14:13:33.973 +00:00 [INF] Starting Clinic Management System
+2026-05-20 14:13:34.013 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:13:34.020 +00:00 [WRN] Failed to determine the https port for redirect.
+2026-05-20 14:13:34.031 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:13:34.042 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:13:34.047 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:13:34.048 +00:00 [INF] Home page accessed
+2026-05-20 14:13:34.048 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:13:34.050 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:13:34.050 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:13:34.094 +00:00 [INF] Executed page /Index in 49.9023ms
+2026-05-20 14:13:34.096 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:13:34.099 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 87.0618ms
+2026-05-20 14:13:34.105 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:13:34.105 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:13:34.105 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:13:34.106 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:13:34.106 +00:00 [INF] Home page accessed
+2026-05-20 14:13:34.106 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:13:34.106 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:13:34.106 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:13:34.108 +00:00 [INF] Executed page /Index in 2.697ms
+2026-05-20 14:13:34.108 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:13:34.108 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 3.8391ms
+2026-05-20 14:13:34.109 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:13:34.110 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:13:34.110 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:13:34.110 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:13:34.110 +00:00 [INF] Home page accessed
+2026-05-20 14:13:34.110 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:13:34.110 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:13:34.110 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:13:34.111 +00:00 [INF] Executed page /Index in 0.8978ms
+2026-05-20 14:13:34.111 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:13:34.111 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 1.7616ms
+2026-05-20 14:13:34.112 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:13:34.112 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:13:34.112 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:13:34.112 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:13:34.112 +00:00 [INF] Home page accessed
+2026-05-20 14:13:34.112 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:13:34.112 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:13:34.112 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:13:34.113 +00:00 [INF] Executed page /Index in 0.5574ms
+2026-05-20 14:13:34.113 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:13:34.113 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 0.9599ms
+2026-05-20 14:13:34.114 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:13:34.114 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:13:34.114 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:13:34.114 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:13:34.114 +00:00 [INF] Home page accessed
+2026-05-20 14:13:34.114 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:13:34.114 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:13:34.114 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:13:34.115 +00:00 [INF] Executed page /Index in 0.613ms
+2026-05-20 14:13:34.115 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:13:34.115 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 1.0635ms
+2026-05-20 14:13:34.116 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:13:34.116 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:13:34.116 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:13:34.116 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:13:34.116 +00:00 [INF] Home page accessed
+2026-05-20 14:13:34.116 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:13:34.116 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:13:34.116 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:13:34.117 +00:00 [INF] Executed page /Index in 0.4646ms
+2026-05-20 14:13:34.117 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:13:34.117 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 0.8981ms
+2026-05-20 14:13:34.118 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/Error - null null
+2026-05-20 14:13:34.118 +00:00 [INF] Executing endpoint '/Error'
+2026-05-20 14:13:34.120 +00:00 [INF] Route matched with {page = "/Error"}. Executing page /Error
+2026-05-20 14:13:34.121 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.ErrorModel.OnGet - ModelState is "Valid"
+2026-05-20 14:13:34.121 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:13:34.121 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:13:34.121 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:13:34.123 +00:00 [INF] Executed page /Error in 2.4121ms
+2026-05-20 14:13:34.123 +00:00 [INF] Executed endpoint '/Error'
+2026-05-20 14:13:34.123 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/Error - 200 null text/html; charset=utf-8 5.5917ms
+2026-05-20 14:13:34.124 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:13:34.124 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:13:34.124 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:13:34.124 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:13:34.125 +00:00 [INF] Home page accessed
+2026-05-20 14:13:34.125 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:13:34.125 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:13:34.125 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:13:34.125 +00:00 [INF] Executed page /Index in 0.502ms
+2026-05-20 14:13:34.125 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:13:34.125 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 1.0227ms
+2026-05-20 14:13:34.127 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - null null
+2026-05-20 14:13:34.128 +00:00 [INF] Executing endpoint '/Index'
+2026-05-20 14:13:34.128 +00:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-05-20 14:13:34.128 +00:00 [INF] Executing handler method ClinicManagement.Web.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-05-20 14:13:34.128 +00:00 [INF] Home page accessed
+2026-05-20 14:13:34.128 +00:00 [INF] Executed handler method OnGet, returned result .
+2026-05-20 14:13:34.128 +00:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-05-20 14:13:34.128 +00:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-05-20 14:13:34.128 +00:00 [INF] Executed page /Index in 0.4866ms
+2026-05-20 14:13:34.128 +00:00 [INF] Executed endpoint '/Index'
+2026-05-20 14:13:34.128 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - 200 null text/html; charset=utf-8 0.8851ms
