@@ -2,16 +2,16 @@
 <CoverageSession>
   <Summary numSequencePoints="730" visitedSequencePoints="0" numBranchPoints="18" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="98" minCyclomaticComplexity="0" visitedClasses="0" numClasses="77" visitedMethods="0" numMethods="177" />
   <Modules>
-    <Module hash="7203216D-A8B5-4052-83E2-80F6F74BA453">
+    <Module hash="C4562023-A50F-4B6E-B447-19078C33403A">
       <ModulePath>ClinicManagement.Application.dll</ModulePath>
-      <ModuleTime>2026-06-12T10:10:15</ModuleTime>
+      <ModuleTime>2026-06-12T11:16:29</ModuleTime>
       <ModuleName>ClinicManagement.Application</ModuleName>
       <Files />
       <Classes />
     </Module>
-    <Module hash="9101A0CC-3BB2-4B0F-BDA8-2604595F27E5">
+    <Module hash="3817692B-7423-4975-8643-1CE88BC409B4">
       <ModulePath>ClinicManagement.Infrastructure.dll</ModulePath>
-      <ModuleTime>2026-06-12T10:10:15</ModuleTime>
+      <ModuleTime>2026-06-12T11:16:29</ModuleTime>
       <ModuleName>ClinicManagement.Infrastructure</ModuleName>
       <Files>
         <File uid="1" fullPath="/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Infrastructure/Repositories/AppointmentRepository.cs" />
@@ -1751,9 +1751,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="DE8E9691-2A11-476C-99D5-7A2E27891FD1">
+    <Module hash="441CB114-46ED-4C64-8366-CBB71166BBAB">
       <ModulePath>ClinicManagement.Web.dll</ModulePath>
-      <ModuleTime>2026-06-12T10:10:15</ModuleTime>
+      <ModuleTime>2026-06-12T11:16:29</ModuleTime>
       <ModuleName>ClinicManagement.Web</ModuleName>
       <Files>
         <File uid="15" fullPath="/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Web/Program.cs" />
@@ -1915,9 +1915,9 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="FD825E6D-F26F-49E2-A1EC-709A33F0CAA7">
+    <Module hash="064C3F02-38D0-47CA-8E2F-99373315E6D5">
       <ModulePath>ClinicManagement.Domain.dll</ModulePath>
-      <ModuleTime>2026-06-12T10:10:15</ModuleTime>
+      <ModuleTime>2026-06-12T11:16:29</ModuleTime>
       <ModuleName>ClinicManagement.Domain</ModuleName>
       <Files>
         <File uid="20" fullPath="/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Domain/Entities/Appointment.cs" />
