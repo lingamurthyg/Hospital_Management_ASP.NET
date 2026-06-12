@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fxJ9NkEinbM=",
+  "dgSpecHash": "7px8urdDOrE=",
   "success": true,
   "projectFilePath": "/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Infrastructure/ClinicManagement.Infrastructure.csproj",
   "expectedPackageFiles": [
-    "/app/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/app/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
     "/app/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/app/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
     "/app/.nuget/packages/dapper/2.1.28/dapper.2.1.28.nupkg.sha512",
@@ -16,7 +16,7 @@
     "/app/.nuget/packages/microsoft.codeanalysis.csharp/4.5.0/microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
     "/app/.nuget/packages/microsoft.codeanalysis.csharp.workspaces/4.5.0/microsoft.codeanalysis.csharp.workspaces.4.5.0.nupkg.sha512",
     "/app/.nuget/packages/microsoft.codeanalysis.workspaces.common/4.5.0/microsoft.codeanalysis.workspaces.common.4.5.0.nupkg.sha512",
-    "/app/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/app/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/app/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "/app/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.1.0/microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "/app/.nuget/packages/microsoft.entityframeworkcore/8.0.0/microsoft.entityframeworkcore.8.0.0.nupkg.sha512",

@@ -1,0 +1,6 @@
+{
+  "ClinicManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/modernize-data\/studio-data\/TNT1001\/APP896099\/transformed-code\/8\/studio-workspace\/BackendService\/src\/ClinicManagement.Application",
+  "ClinicManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/modernize-data\/studio-data\/TNT1001\/APP896099\/transformed-code\/8\/studio-workspace\/BackendService\/src\/ClinicManagement.Domain",
+  "ClinicManagement.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/modernize-data\/studio-data\/TNT1001\/APP896099\/transformed-code\/8\/studio-workspace\/BackendService\/src\/ClinicManagement.Infrastructure",
+  "ClinicManagement.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/modernize-data\/studio-data\/TNT1001\/APP896099\/transformed-code\/8\/studio-workspace\/BackendService\/src\/ClinicManagement.Web"
+}

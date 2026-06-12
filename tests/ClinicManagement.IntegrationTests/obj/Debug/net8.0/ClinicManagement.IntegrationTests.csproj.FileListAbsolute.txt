@@ -470,3 +470,7 @@
 /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/obj/Debug/net8.0/ClinicManagement.IntegrationTests.pdb
 /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/obj/Debug/net8.0/ClinicManagement.IntegrationTests.genruntimeconfig.cache
 /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/obj/Debug/net8.0/ref/ClinicManagement.IntegrationTests.dll
+/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/bin/Debug/net8.0/Castle.Core.dll
+/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/bin/Debug/net8.0/Moq.dll
+/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/bin/Debug/net8.0/CoverletSourceRootsMapping_ClinicManagement.IntegrationTests

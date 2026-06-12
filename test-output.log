@@ -1,0 +1,39 @@
+  Determining projects to restore...
+/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Application/ClinicManagement.Application.csproj : warning NU1903: Package 'AutoMapper' 14.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/ClinicManagement.sln]
+  All projects are up-to-date for restore.
+/modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Application/ClinicManagement.Application.csproj : warning NU1903: Package 'AutoMapper' 14.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+  ClinicManagement.Domain -> /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Domain/bin/Debug/net8.0/ClinicManagement.Domain.dll
+  ClinicManagement.Application -> /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Application/bin/Debug/net8.0/ClinicManagement.Application.dll
+  ClinicManagement.Infrastructure -> /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Infrastructure/bin/Debug/net8.0/ClinicManagement.Infrastructure.dll
+  ClinicManagement.UnitTests -> /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/ClinicManagement.UnitTests.dll
+Test run for /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/ClinicManagement.UnitTests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.14.0 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+  ClinicManagement.Web -> /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Web/bin/Debug/net8.0/ClinicManagement.Web.dll
+Test run for /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Web/bin/Debug/net8.0/ClinicManagement.Web.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.14.0 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/TestResults/test-results.trx
+
+Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: 4 ms - ClinicManagement.UnitTests.dll (net8.0)
+No test is available in /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/src/ClinicManagement.Web/bin/Debug/net8.0/ClinicManagement.Web.dll. Make sure that test discoverer & executors are registered and platform & framework version settings are appropriate and try again.
+WARNING: Overwriting results file: /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/TestResults/test-results.trx
+Results File: /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/TestResults/test-results.trx
+
+Additionally, path to test adapters can be specified using /TestAdapterPath command. Example  /TestAdapterPath:<pathToCustomAdapters>.
+  ClinicManagement.IntegrationTests -> /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/bin/Debug/net8.0/ClinicManagement.IntegrationTests.dll
+Test run for /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/bin/Debug/net8.0/ClinicManagement.IntegrationTests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.14.0 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Multiple test adapters with the same uri 'executor://xunit/VsTestRunner2/netcoreapp' were found. Ignoring adapter 'Xunit.Runner.VisualStudio.VsTestRunner'. Please uninstall the conflicting adapter(s) to avoid this warning.
+No test is available in /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/tests/ClinicManagement.IntegrationTests/bin/Debug/net8.0/ClinicManagement.IntegrationTests.dll. Make sure that test discoverer & executors are registered and platform & framework version settings are appropriate and try again.
+WARNING: Overwriting results file: /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/TestResults/test-results.trx
+Results File: /modernize-data/studio-data/TNT1001/APP896099/transformed-code/8/studio-workspace/BackendService/TestResults/test-results.trx
+
+Additionally, path to test adapters can be specified using /TestAdapterPath command. Example  /TestAdapterPath:<pathToCustomAdapters>.
