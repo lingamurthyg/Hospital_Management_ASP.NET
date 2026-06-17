@@ -1,0 +1,42 @@
+@using ClinicManagement.Web.Pages
+@model ClinicManagement.Web.Pages.IndexModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Clinic Management System</h1>
+    <p class="lead">Manage your clinic operations efficiently</p>
+    
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Patient Portal</h5>
+                    <p class="card-text">Book appointments, view medical history, and manage your health records.</p>
+                    <a href="/Patient/Login" class="btn btn-primary">Patient Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Doctor Portal</h5>
+                    <p class="card-text">Manage appointments, update patient records, and view schedules.</p>
+                    <a href="/Doctor/Login" class="btn btn-success">Doctor Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Admin Portal</h5>
+                    <p class="card-text">Manage staff, doctors, departments, and clinic operations.</p>
+                    <a href="/Admin/Login" class="btn btn-warning">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-5">
+        <h3>New Patient?</h3>
+        <a href="/SignUp" class="btn btn-lg btn-outline-primary">Register Now</a>
+    </div>
+</div>
