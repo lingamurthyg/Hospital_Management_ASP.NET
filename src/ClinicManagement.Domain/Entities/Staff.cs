@@ -1,0 +1,18 @@
+namespace ClinicManagement.Domain.Entities;
+
+/// <summary>
+/// Staff entity representing other staff members
+/// </summary>
+public class Staff : BaseEntity
+{
+    public int StaffID { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public DateTime BirthDate { get; set; }
+    public string Phone { get; set; } = string.Empty;
+    public string Gender { get; set; } = string.Empty;
+    public string Designation { get; set; } = string.Empty;
+    public string Address { get; set; } = string.Empty;
+    public decimal Salary { get; set; }
+    public string Qualification { get; set; } = string.Empty;
+    public int Status { get; set; } = 1;
+}
