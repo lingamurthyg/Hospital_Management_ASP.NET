@@ -25,6 +25,12 @@ namespace ClinicManagement.Infrastructure.Data
         {
             base.OnModelCreating(modelBuilder);
 
+            // Set default schema to public for PostgreSQL
+            modelBuilder.HasDefaultSchema("public");
+
+            // Configure PostgreSQL extensions if needed
+            // modelBuilder.HasPostgresExtension("uuid-ossp");
+
             // Configure Patient entity
             modelBuilder.Entity<Patient>(entity =>
             {
@@ -32,6 +38,10 @@ namespace ClinicManagement.Infrastructure.Data
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(20);
                 entity.Property(e => e.Email).IsRequired().HasMaxLength(30);
                 entity.HasIndex(e => e.Email).IsUnique();
+                
+                // PostgreSQL-specific: Configure timestamp without timezone
+                entity.Property(e => e.BirthDate)
+                    .HasColumnType("timestamp without time zone");
             });
 
             // Configure Doctor entity
@@ -41,6 +51,10 @@ namespace ClinicManagement.Infrastructure.Data
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(30);
                 entity.Property(e => e.Email).IsRequired().HasMaxLength(30);
                 entity.HasIndex(e => e.Email).IsUnique();
+                
+                // PostgreSQL-specific: Configure timestamp without timezone
+                entity.Property(e => e.BirthDate)
+                    .HasColumnType("timestamp without time zone");
                 
                 entity.HasOne(d => d.Department)
                     .WithMany(dept => dept.Doctors)
@@ -59,6 +73,10 @@ namespace ClinicManagement.Infrastructure.Data
             modelBuilder.Entity<Appointment>(entity =>
             {
                 entity.HasKey(e => e.AppointmentID);
+                
+                // PostgreSQL-specific: Configure timestamp without timezone
+                entity.Property(e => e.AppointmentDate)
+                    .HasColumnType("timestamp without time zone");
                 
                 entity.HasOne(a => a.Patient)
                     .WithMany(p => p.Appointments)
@@ -81,6 +99,10 @@ namespace ClinicManagement.Infrastructure.Data
             {
                 entity.HasKey(e => e.FreeSlotID);
                 
+                // PostgreSQL-specific: Configure timestamp without timezone
+                entity.Property(e => e.SlotDate)
+                    .HasColumnType("timestamp without time zone");
+                
                 entity.HasOne(fs => fs.Doctor)
                     .WithMany(d => d.FreeSlots)
                     .HasForeignKey(fs => fs.DoctorID)
@@ -91,7 +113,14 @@ namespace ClinicManagement.Infrastructure.Data
             modelBuilder.Entity<Bill>(entity =>
             {
                 entity.HasKey(e => e.BillID);
-                entity.Property(e => e.Amount).HasColumnType("decimal(18,2)");
+                
+                // PostgreSQL uses numeric type for decimal
+                entity.Property(e => e.Amount)
+                    .HasColumnType("numeric(18,2)");
+                
+                // PostgreSQL-specific: Configure timestamp without timezone
+                entity.Property(e => e.BillDate)
+                    .HasColumnType("timestamp without time zone");
                 
                 entity.HasOne(b => b.Appointment)
                     .WithOne(a => a.Bill)
@@ -109,6 +138,10 @@ namespace ClinicManagement.Infrastructure.Data
             {
                 entity.HasKey(e => e.HistoryID);
                 
+                // PostgreSQL-specific: Configure timestamp without timezone
+                entity.Property(e => e.TreatmentDate)
+                    .HasColumnType("timestamp without time zone");
+                
                 entity.HasOne(th => th.Patient)
                     .WithMany(p => p.TreatmentHistories)
                     .HasForeignKey(th => th.PatientID)
@@ -120,6 +153,10 @@ namespace ClinicManagement.Infrastructure.Data
             {
                 entity.HasKey(e => e.StaffID);
                 entity.Property(e => e.Name).IsRequired().HasMaxLength(30);
+                
+                // PostgreSQL-specific: Configure timestamp without timezone
+                entity.Property(e => e.BirthDate)
+                    .HasColumnType("timestamp without time zone");
             });
         }
     }
