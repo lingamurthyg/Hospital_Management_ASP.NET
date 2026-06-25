@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UUO/6Kz4PPg=",
+  "dgSpecHash": "s+qPd9sY9Lc=",
   "success": true,
   "projectFilePath": "/modernize-data/studio-data/TNT1001/APP860362/transformed-code/12/studio-workspace/Backend Services/Code/DBProject/src/ClinicManagement.Application/ClinicManagement.Application.csproj",
   "expectedPackageFiles": [
     "/app/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "/app/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "/app/.nuget/packages/microsoft.netcore.app.ref/8.0.16/microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
-    "/app/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.16/microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
+    "/app/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
