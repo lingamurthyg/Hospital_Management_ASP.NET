@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="eacfc46b-5442-4fee-a3a2-c1be025f7d90" name="@7c4d9437b586 2026-06-26 07:55:34" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-06-26T07:55:34.5442632+00:00" queuing="2026-06-26T07:55:34.5442633+00:00" start="2026-06-26T07:55:33.8865904+00:00" finish="2026-06-26T07:55:34.5495739+00:00" />
+  <TestSettings name="default" id="236fe0aa-126c-47dc-b667-c6fee27bc4c4">
+    <Deployment runDeploymentRoot="_7c4d9437b586_2026-06-26_07_55_34" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a9d48ea7-9295-43d9-9037-ea42a06bc056" testId="d719bb0a-9004-0b18-7e9e-3b9c44490ddd" testName="ClinicManagement.Tests.Services.PatientServiceTests.RegisterPatientAsync_ThrowsException_WhenEmailExists" computerName="7c4d9437b586" duration="00:00:00.0064323" startTime="2026-06-26T07:55:34.4311085+00:00" endTime="2026-06-26T07:55:34.4311086+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9d48ea7-9295-43d9-9037-ea42a06bc056" />
+    <UnitTestResult executionId="753dfe6f-50b6-4022-961f-df6d128db83d" testId="8ef99281-9f69-ed58-b0a5-c0abc3d95035" testName="ClinicManagement.Tests.Services.PatientServiceTests.GetPatientByIdAsync_ReturnsPatient_WhenPatientExists" computerName="7c4d9437b586" duration="00:00:00.0629445" startTime="2026-06-26T07:55:34.4255758+00:00" endTime="2026-06-26T07:55:34.4256103+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="753dfe6f-50b6-4022-961f-df6d128db83d" />
+    <UnitTestResult executionId="7a318eee-93fe-4474-a7a8-5a302dfaaca4" testId="15f1de1d-5e5d-7346-9e0a-0fc94aae7af5" testName="ClinicManagement.Tests.Services.PatientServiceTests.GetAllPatientsAsync_ReturnsAllPatients" computerName="7c4d9437b586" duration="00:00:00.0015541" startTime="2026-06-26T07:55:34.4462977+00:00" endTime="2026-06-26T07:55:34.4462978+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a318eee-93fe-4474-a7a8-5a302dfaaca4">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidCastException : Unable to cast object of type 'ListSelectIterator`2[ClinicManagement.Domain.Entities.Patient,ClinicManagement.Application.DTOs.PatientDto]' to type 'System.Collections.Generic.List`1[ClinicManagement.Application.DTOs.PatientDto]'.</Message>
+          <StackTrace>   at ClinicManagement.Tests.Services.PatientServiceTests.GetAllPatientsAsync_ReturnsAllPatients() in /modernize-data/studio-data/TNT1001/APP860362/transformed-code/12/studio-workspace/Backend Services/Code/DBProject/tests/ClinicManagement.Tests/Services/PatientServiceTests.cs:line 114
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="60522294-66a7-4390-9781-916d31c45f1d" testId="4ca5f2ad-7539-ee8f-b28d-a0bdd2ec099c" testName="ClinicManagement.Tests.Services.PatientServiceTests.GetPatientByIdAsync_ReturnsNull_WhenPatientDoesNotExist" computerName="7c4d9437b586" duration="00:00:00.0033345" startTime="2026-06-26T07:55:34.4344486+00:00" endTime="2026-06-26T07:55:34.4344488+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60522294-66a7-4390-9781-916d31c45f1d" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ClinicManagement.Tests.Services.PatientServiceTests.GetPatientByIdAsync_ReturnsNull_WhenPatientDoesNotExist" storage="/modernize-data/studio-data/tnt1001/app860362/transformed-code/12/studio-workspace/backend services/code/dbproject/tests/clinicmanagement.tests/bin/debug/net9.0/clinicmanagement.tests.dll" id="4ca5f2ad-7539-ee8f-b28d-a0bdd2ec099c">
+      <Execution id="60522294-66a7-4390-9781-916d31c45f1d" />
+      <TestMethod codeBase="/modernize-data/studio-data/TNT1001/APP860362/transformed-code/12/studio-workspace/Backend Services/Code/DBProject/tests/ClinicManagement.Tests/bin/Debug/net9.0/ClinicManagement.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ClinicManagement.Tests.Services.PatientServiceTests" name="GetPatientByIdAsync_ReturnsNull_WhenPatientDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="ClinicManagement.Tests.Services.PatientServiceTests.GetPatientByIdAsync_ReturnsPatient_WhenPatientExists" storage="/modernize-data/studio-data/tnt1001/app860362/transformed-code/12/studio-workspace/backend services/code/dbproject/tests/clinicmanagement.tests/bin/debug/net9.0/clinicmanagement.tests.dll" id="8ef99281-9f69-ed58-b0a5-c0abc3d95035">
+      <Execution id="753dfe6f-50b6-4022-961f-df6d128db83d" />
+      <TestMethod codeBase="/modernize-data/studio-data/TNT1001/APP860362/transformed-code/12/studio-workspace/Backend Services/Code/DBProject/tests/ClinicManagement.Tests/bin/Debug/net9.0/ClinicManagement.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ClinicManagement.Tests.Services.PatientServiceTests" name="GetPatientByIdAsync_ReturnsPatient_WhenPatientExists" />
+    </UnitTest>
+    <UnitTest name="ClinicManagement.Tests.Services.PatientServiceTests.GetAllPatientsAsync_ReturnsAllPatients" storage="/modernize-data/studio-data/tnt1001/app860362/transformed-code/12/studio-workspace/backend services/code/dbproject/tests/clinicmanagement.tests/bin/debug/net9.0/clinicmanagement.tests.dll" id="15f1de1d-5e5d-7346-9e0a-0fc94aae7af5">
+      <Execution id="7a318eee-93fe-4474-a7a8-5a302dfaaca4" />
+      <TestMethod codeBase="/modernize-data/studio-data/TNT1001/APP860362/transformed-code/12/studio-workspace/Backend Services/Code/DBProject/tests/ClinicManagement.Tests/bin/Debug/net9.0/ClinicManagement.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ClinicManagement.Tests.Services.PatientServiceTests" name="GetAllPatientsAsync_ReturnsAllPatients" />
+    </UnitTest>
+    <UnitTest name="ClinicManagement.Tests.Services.PatientServiceTests.RegisterPatientAsync_ThrowsException_WhenEmailExists" storage="/modernize-data/studio-data/tnt1001/app860362/transformed-code/12/studio-workspace/backend services/code/dbproject/tests/clinicmanagement.tests/bin/debug/net9.0/clinicmanagement.tests.dll" id="d719bb0a-9004-0b18-7e9e-3b9c44490ddd">
+      <Execution id="a9d48ea7-9295-43d9-9037-ea42a06bc056" />
+      <TestMethod codeBase="/modernize-data/studio-data/TNT1001/APP860362/transformed-code/12/studio-workspace/Backend Services/Code/DBProject/tests/ClinicManagement.Tests/bin/Debug/net9.0/ClinicManagement.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ClinicManagement.Tests.Services.PatientServiceTests" name="RegisterPatientAsync_ThrowsException_WhenEmailExists" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d719bb0a-9004-0b18-7e9e-3b9c44490ddd" executionId="a9d48ea7-9295-43d9-9037-ea42a06bc056" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ef99281-9f69-ed58-b0a5-c0abc3d95035" executionId="753dfe6f-50b6-4022-961f-df6d128db83d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15f1de1d-5e5d-7346-9e0a-0fc94aae7af5" executionId="7a318eee-93fe-4474-a7a8-5a302dfaaca4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ca5f2ad-7539-ee8f-b28d-a0bdd2ec099c" executionId="60522294-66a7-4390-9781-916d31c45f1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="3" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.4.1+b9eacec401 (64-bit .NET 9.0.5)
+[xUnit.net 00:00:00.07]   Discovering: ClinicManagement.Tests
+[xUnit.net 00:00:00.09]   Discovered:  ClinicManagement.Tests
+[xUnit.net 00:00:00.10]   Starting:    ClinicManagement.Tests
+[xUnit.net 00:00:00.22]       System.InvalidCastException : Unable to cast object of type 'ListSelectIterator`2[ClinicManagement.Domain.Entities.Patient,ClinicManagement.Application.DTOs.PatientDto]' to type 'System.Collections.Generic.List`1[ClinicManagement.Application.DTOs.PatientDto]'.
+[xUnit.net 00:00:00.22]       Stack Trace:
+[xUnit.net 00:00:00.22]         /modernize-data/studio-data/TNT1001/APP860362/transformed-code/12/studio-workspace/Backend Services/Code/DBProject/tests/ClinicManagement.Tests/Services/PatientServiceTests.cs(114,0): at ClinicManagement.Tests.Services.PatientServiceTests.GetAllPatientsAsync_ReturnsAllPatients()
+[xUnit.net 00:00:00.22]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.22]   Finished:    ClinicManagement.Tests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="7c4d9437b586" outcome="Error" timestamp="2026-06-26T07:55:34.4449406+00:00">
+        <Text>[xUnit.net 00:00:00.22]     ClinicManagement.Tests.Services.PatientServiceTests.GetAllPatientsAsync_ReturnsAllPatients [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
