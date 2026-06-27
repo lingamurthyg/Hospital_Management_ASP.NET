@@ -17,9 +17,17 @@ builder.Host.UseSerilog();
 // Add services to the container
 builder.Services.AddRazorPages();
 
-// Configure DbContext
+// Configure DbContext for PostgreSQL
 builder.Services.AddDbContext<ClinicDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        npgsqlOptions => npgsqlOptions
+            .MigrationsHistoryTable("__efmigrations_history", "public")
+            .EnableRetryOnFailure(
+                maxRetryCount: 5,
+                maxRetryDelay: TimeSpan.FromSeconds(30),
+                errorCodesToAdd: null))
+    .UseSnakeCaseNamingConvention());
 
 // Register repositories
 builder.Services.AddScoped<ClinicManagement.Domain.Interfaces.Repositories.IPatientRepository, 
