@@ -1,15 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "HqtgQ19Ov48=",
+  "dgSpecHash": "pDCBlImIMss=",
   "success": true,
   "projectFilePath": "/modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/src/ClinicManagement.Application/ClinicManagement.Application.csproj",
   "expectedPackageFiles": [
-    "/app/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/app/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
     "/app/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
-    "/app/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "/app/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "/app/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "/app/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/app/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/app/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "/app/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/app/.nuget/packages/microsoft.netcore.app.ref/8.0.16/microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
     "/app/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.16/microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
   ],
@@ -17,7 +16,7 @@
     {
       "code": "NU1903",
       "level": "Warning",
-      "message": "Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "message": "Package 'AutoMapper' 14.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
       "projectPath": "/modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/src/ClinicManagement.Application/ClinicManagement.Application.csproj",
       "warningLevel": 1,
       "filePath": "/modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/src/ClinicManagement.Application/ClinicManagement.Application.csproj",

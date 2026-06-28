@@ -78,6 +78,10 @@ public class ClinicDbContext : DbContext
             
             // Configure DateTime columns for PostgreSQL
             entity.Property(e => e.BirthDate).HasColumnType("timestamp without time zone");
+            
+            // Configure relationship with Department
+            entity.HasOne(d => d.Department)
+                .WithMany(dept => dept.Doctors)
                 .HasForeignKey(d => d.DepartmentId)
                 .OnDelete(DeleteBehavior.Restrict);
         });
@@ -105,16 +109,20 @@ public class ClinicDbContext : DbContext
         {
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Status).HasMaxLength(50);
-            entity.Property(e => e.Reason).HasMaxLength(1000);
-            entity.Property(e => e.CreatedBy).HasMaxLength(200);
-            entity.Property(e => e.ModifiedBy).HasMaxLength(200);
             
             // Configure DateTime columns for PostgreSQL
+            entity.Property(e => e.AppointmentDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
+            entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
+            
             entity.Property(e => e.TimeSlot).HasMaxLength(50);
             entity.Property(e => e.Disease).HasMaxLength(500);
             entity.Property(e => e.Progress).HasMaxLength(2000);
             entity.Property(e => e.Prescription).HasMaxLength(2000);
             entity.Property(e => e.BillAmount).HasColumnType("decimal(18,2)");
+            
+            // Configure relationships
+            entity.HasOne(a => a.Patient)
                 .WithMany(p => p.Appointments)
                 .HasForeignKey(a => a.PatientId)
                 .OnDelete(DeleteBehavior.Restrict);
@@ -132,54 +140,100 @@ public class ClinicDbContext : DbContext
         {
             entity.HasKey(e => e.Id);
             entity.Property(e => e.Name).IsRequired().HasMaxLength(200);
-            entity.Property(e => e.Email).IsRequired().HasMaxLength(200);
-            entity.Property(e => e.Password).IsRequired().HasMaxLength(500);
             entity.Property(e => e.Phone).HasMaxLength(20);
-            entity.Property(e => e.Role).HasMaxLength(100);
-            entity.Property(e => e.CreatedBy).HasMaxLength(200);
-            entity.Property(e => e.ModifiedBy).HasMaxLength(200);
-            
-            // Configure DateTime columns for PostgreSQL
             entity.Property(e => e.Address).HasMaxLength(500);
             entity.Property(e => e.Gender).HasMaxLength(10);
             entity.Property(e => e.Designation).HasMaxLength(200);
             entity.Property(e => e.Qualification).HasMaxLength(500);
             entity.Property(e => e.Salary).HasColumnType("decimal(18,2)");
-    {
-        modelBuilder.Entity<Feedback>(entity =>
-            entity.Property(e => e.BirthDate).HasColumnType("timestamp without time zone");
+            
             // Configure DateTime columns for PostgreSQL
+            entity.Property(e => e.BirthDate).HasColumnType("timestamp without time zone");
             entity.Property(e => e.CreatedDate).HasColumnType("timestamp without time zone");
             entity.Property(e => e.ModifiedDate).HasColumnType("timestamp without time zone");
+        });
+    }
 
-            // Configure relationship with Patient
+    private void ConfigureFeedback(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Feedback>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Rating).IsRequired();
+            entity.Property(e => e.Comments).HasMaxLength(2000);
+            entity.Property(e => e.FeedbackDate).HasColumnType("timestamp without time zone");
+            
+            // Configure relationships
             entity.HasOne(f => f.Patient)
                 .WithMany(p => p.Feedbacks)
                 .HasForeignKey(f => f.PatientId)
-            entity.Property(e => e.Comments).HasMaxLength(2000);
-            entity.Property(e => e.FeedbackDate).HasColumnType("timestamp without time zone");
-            // Configure relationships
+                .OnDelete(DeleteBehavior.Restrict);
+            
             entity.HasOne(f => f.Appointment)
                 .WithOne(a => a.Feedback)
                 .HasForeignKey<Feedback>(f => f.AppointmentId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-
             entity.HasOne(f => f.Doctor)
                 .WithMany()
                 .HasForeignKey(f => f.DoctorId)
                 .OnDelete(DeleteBehavior.Restrict);
+        });
+    }
+
+    public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        // Automatically set audit fields
+        var entries = ChangeTracker.Entries()
+            .Where(e => e.Entity is Patient || e.Entity is Department || e.Entity is Appointment || e.Entity is Staff)
+            .Where(e => e.State == EntityState.Added || e.State == EntityState.Modified);
+
+        foreach (var entry in entries)
+        {
             if (entry.State == EntityState.Added)
             {
-                entry.Entity.CreatedDate = DateTime.UtcNow;
-                entry.Entity.IsActive = true;
+                if (entry.Entity is Patient patient)
+                {
+                    patient.CreatedDate = DateTime.UtcNow;
+                    patient.IsActive = true;
+                }
+                else if (entry.Entity is Department department)
+                {
+                    department.CreatedDate = DateTime.UtcNow;
+                    department.IsActive = true;
+                }
+                else if (entry.Entity is Appointment appointment)
+                {
+                    appointment.CreatedDate = DateTime.UtcNow;
+                    appointment.IsActive = true;
+                }
+                else if (entry.Entity is Staff staff)
+                {
+                    staff.CreatedDate = DateTime.UtcNow;
+                    staff.IsActive = true;
+                }
             }
             else if (entry.State == EntityState.Modified)
             {
-                entry.Entity.ModifiedDate = DateTime.UtcNow;
+                if (entry.Entity is Patient patient)
+                {
+                    patient.ModifiedDate = DateTime.UtcNow;
+                }
+                else if (entry.Entity is Department department)
+                {
+                    department.ModifiedDate = DateTime.UtcNow;
+                }
+                else if (entry.Entity is Appointment appointment)
+                {
+                    appointment.ModifiedDate = DateTime.UtcNow;
+                }
+                else if (entry.Entity is Staff staff)
+                {
+                    staff.ModifiedDate = DateTime.UtcNow;
+                }
             }
         }
 
-        return base.SaveChangesAsync(cancellationToken);
+        return await base.SaveChangesAsync(cancellationToken);
     }
 }

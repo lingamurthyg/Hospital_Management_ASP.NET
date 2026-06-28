@@ -10,6 +10,9 @@
 /modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/FluentAssertions.dll
 /modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/FluentValidation.dll
 /modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+/modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
 /modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/Microsoft.TestPlatform.CoreUtilities.dll
 /modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/Microsoft.TestPlatform.PlatformAbstractions.dll
 /modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -111,3 +114,4 @@
 /modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/obj/Debug/net8.0/ClinicManagement.UnitTests.pdb
 /modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/obj/Debug/net8.0/ClinicManagement.UnitTests.genruntimeconfig.cache
 /modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/obj/Debug/net8.0/ref/ClinicManagement.UnitTests.dll
+/modernize-data/studio-data/TNT1001/APP242299/transformed-code/15/studio-workspace/FullApp/tests/ClinicManagement.UnitTests/bin/Debug/net8.0/CoverletSourceRootsMapping_ClinicManagement.UnitTests
